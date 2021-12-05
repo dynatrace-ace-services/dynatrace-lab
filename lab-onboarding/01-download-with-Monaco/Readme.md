@@ -26,7 +26,7 @@ You will backup all the configuration file of the Dynatrace Saas tenant
 
 # Next Step
 
-- [02-deploy-with-Monaco](/lab-onboarding/tree/main/02-deploy-with-Monaco) => to deploy all the configuration for easytravel on your tenant  
+- [02-deploy-with-Monaco](/lab-onboarding/02-deploy-with-Monaco) => to deploy all the configuration for easytravel on your tenant  
 
        
 # Troubleshoot  
