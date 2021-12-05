@@ -1,4 +1,4 @@
-#  Dynatrace Lab
+#  Dynatrace labs
 
 The complement of the lab are here.  
 
