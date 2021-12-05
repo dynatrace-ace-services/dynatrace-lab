@@ -1,7 +1,7 @@
 # 01-download-configjson-with-Monaco
 You will backup all the configuration file of the Dynatrace Saas tenant
    
-1) you need these variables (seen in the previous step) 
+1) your variables seen in the previous step  
 
 	   export NEW_CLI=1
 	   export MyTenant=<YYYY>.live.dynatrace.com
