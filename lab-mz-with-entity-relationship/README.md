@@ -8,13 +8,14 @@ In this lab the rules of your management zone have been modified with entity-rel
 
 Copie the directory on monaco directory  
 
-       cd;cp -R lab-mz-with-entity-relationship/ lab-onboarding/
+        cd
+	cp -R lab-mz-with-entity-relationship/ lab-onboarding/
 	   
 Validate your variables  
 
-	    echo "NEW_CLI="$NEW_CLI;echo "MyTenant=https://"$MyTenant;echo "MyToken="$MyToken;echo "Appname="$Appname;
+	echo "NEW_CLI="$NEW_CLI;echo "MyTenant=https://"$MyTenant;echo "MyToken="$MyToken;echo "Appname="$Appname;
 		   
 Deploy with monaco  
 
-       cd;cd dynatrace-lab/lab-onboarding;
-       ./monaco deploy -e=environments.yaml lab-mz-with-entity-relationship
+        cd;cd dynatrace-lab/lab-onboarding;
+        ./monaco deploy -e=environments.yaml lab-mz-with-entity-relationship
