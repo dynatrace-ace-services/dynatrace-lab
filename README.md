@@ -1,4 +1,4 @@
-#  Lab - onboard your application with Monaco
+#  Lab - how to onboard your application with Monaco
 
 In this lab, you will automatically deploy the smart configuration for easytravel.  
 We will use Monaco to deploy the configuration to onboard your easytravel.   
