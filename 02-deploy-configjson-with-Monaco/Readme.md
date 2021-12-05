@@ -30,16 +30,12 @@ You will import :
        echo "NEW_CLI="$NEW_CLI;echo "MyTenant=https://"$MyTenant;echo "MyToken="$MyToken;echo "Appname="$Appname;echo "Hostname="$Hostname;echo "Email="$Email 
 
 
-- result  
-![image](https://user-images.githubusercontent.com/40337213/116620595-542b6d80-a942-11eb-8c44-909b151c5500.png)
-      
-      
-4) deploy the configuration 
+3) deploy the configuration 
 
        cd;cd dynatrace-lab;
        ./monaco deploy -e=environments.yaml -s=free_trial 02-deploy-configjson-with-Monaco
        
-5) verify on your Dynatrace environment the result of the imported configurations  
+4) verify on your Dynatrace environment the result of the imported configurations  
  
 - **application-web and app-detection-rule** : _Settings > Web and mobile monitoring > Application detection_ 
 ![image](https://user-images.githubusercontent.com/40337213/116122980-b6763b00-a6c2-11eb-93f3-dde596728237.png)
