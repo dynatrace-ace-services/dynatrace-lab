@@ -1,6 +1,7 @@
 #  Lab - mz-with-entity-relationship
 
 In this lab the rules of your management zone have been modified with entity-relationship.  
+You will update the Monaco template from the previous labs with these new rules.   
 - type(SERVICE),databaseName.exists(),toRelationships.calls(type(SERVICE),tag(app:easytravel<xx>))  
 - type(APPLICATION),fromrelationships.calls(type(SERVICE),tag(app:easytravel<xx>))  
 - type(HTTP_CHECK),fromrelationships.calls(type(SERVICE),tag(app:easytravel<xx>))  
