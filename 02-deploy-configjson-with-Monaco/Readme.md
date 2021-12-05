@@ -32,7 +32,7 @@ You will import :
 
 3) deploy the configuration 
 
-       cd;cd dynatrace-lab;
+       cd;cd dynatrace-lab-onboarding;
        ./monaco deploy -e=environments.yaml -s=free_trial 02-deploy-configjson-with-Monaco
        
 4) verify on your Dynatrace environment the result of the imported configurations  
