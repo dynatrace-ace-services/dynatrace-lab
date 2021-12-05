@@ -6,7 +6,7 @@ Monaco is a small executable which can be installed on your laptop, on an active
 For a simplification of the lab this Lab, we will install Monaco on the monitored VM, BUT you never do that on the real life.     
 In this lab we only use the monaco version **NEW_CLI=1** (the future of monaco)  
 
-# 3 steps 
+# Lab - follow these steps   
 
 - [00-install-Monaco ](https://github.com/dynatrace-ace-services/easy-dynatrace-with-monaco/tree/main/00-install-Monaco) => to install monaco and connect it to your dynatrace free trial environment   
 - [01-download-configjson-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/01-download-configjson-with-Monaco) => to download your configuration and backup the json file
