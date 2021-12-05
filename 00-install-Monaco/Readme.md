@@ -34,8 +34,8 @@ click [here](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code#exper
   ![image](https://user-images.githubusercontent.com/40337213/116579510-bd938800-a912-11eb-9ee9-ef5b32583d59.png)
 
 4) use your API token   
-Go to your Dynatrace environment :  _Settings > Integration > Dynatrace API > Generate Token_   
-with these privileges (more info about token permission for monaco [here](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code#supported-configuration-types-and-token-permissions):  
+as a reminder, you already have created an API Token,:  _Settings > Integration > Dynatrace API > Generate Token_   
+you need these privileges at least  (more info about token permission for monaco [here](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code#supported-configuration-types-and-token-permissions):  
     <img src="https://user-images.githubusercontent.com/40337213/115959740-ffd15980-a50d-11eb-8f03-9bffeb0b1141.png" width="450" height="250">
 
        tip: keep the value of the token you will not be able to display it afterwards 
