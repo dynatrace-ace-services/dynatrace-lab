@@ -7,7 +7,7 @@ You will update the Monaco template from the previous labs with these new rules.
 - type(HTTP_CHECK),fromrelationships.calls(type(SERVICE),tag(app:easytravel<xx>))  
 - type(SYNTHETIC_TEST),fromRelationships.monitors(type(APPLICATION),entityName(easytravel<xx>))  
 
-Copie the directory on monaco directory:  
+Import the new mz template in the lab-onboarding directory (directory with Monaco):  
 
     cd;cd dynatrace-lab
     cp -R lab-mz-with-entity-relationship/ lab-onboarding/
