@@ -6,7 +6,7 @@ Paste the command on you VM.
 
 
        cd;
-       git clone https://github.com/dynatrace-ace-services/dynatrace-lab/lab-onboarding.git
+       git clone https://github.com/dynatrace-ace-services/lab-onboarding.git
 
 2) download monaco (monaco-linux-amd64 -more distrib [here](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/))  
 
