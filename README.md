@@ -1,7 +1,6 @@
 #  Lab - how to onboard your application with Monaco
 
-In this lab, you will automatically deploy the smart configuration for easytravel.  
-We will use Monaco to deploy the configuration to onboard your easytravel.   
+In this lab, you will automatically deploy the smart configuration for easytravel with Monaco (Monitoring as Code)  
 Monaco is a small executable which can be installed on your laptop, on an activegate, on a container on a jumbobox ...  
 For a simplification of the lab this Lab, we will install Monaco on the monitored VM, BUT you never do that on the real life.     
 In this lab we only use the monaco version **NEW_CLI=1** (the future of monaco)  
