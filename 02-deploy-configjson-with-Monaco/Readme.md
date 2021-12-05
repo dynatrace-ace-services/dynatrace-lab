@@ -15,11 +15,11 @@ You will import :
 - sevice-naming
 - dashboard
 
-1) export the variables  
+1) your variables  
 	   
 	   export NEW_CLI=1
-	   export MyTenant=<YYYY>.live.dynatrace.com  (without https://...)
-	   export MyToken=<dt.1234567890>			(API Token)
+	   export MyTenant=<YYYY>.live.dynatrace.com
+	   export MyToken=<dt.1234567890>
 	   export Appname=easytravel<XX>
 	   export Hostname=dynatracelab<XX>.<AzureRegion>.cloudapp.azure.com
 	   export Email=<your email of Dynatrace saas tenant connection>
