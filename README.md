@@ -4,7 +4,7 @@ The complement of the lab are here.
 
 
 - [lab-onboarding](/lab-onboarding) => onboard the application easytravel with Monaco 
-- [lab-mz-with-entity-relationship](/lab-mz-with-entity-relationship) => use entity relationship in the management zone rules, and add it to the mz template Monaco  
+- [lab-mz-with-entity-relationship](/lab-mz-with-entity-relationship) => management zone rules with entity relationship added to the Monaco template  
 
 # Dynatrace workshops
 
