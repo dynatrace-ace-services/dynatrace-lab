@@ -1,4 +1,4 @@
-# 01-download-configjson-with-Monaco
+# 01-download-configjson-with-Monaco  
 You will backup all the configuration file of the Dynatrace Saas tenant
    
 1) your variables seen in the previous step  
@@ -25,7 +25,7 @@ You will backup all the configuration file of the Dynatrace Saas tenant
        ls -lrt mydownload/free_trial
        
        
-4) troubleshoot
+4) troubleshoot  
 If the downlaod doesn't work, verify thes configurations :   
 
 | Step  | test |Status |
