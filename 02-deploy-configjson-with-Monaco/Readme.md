@@ -75,4 +75,19 @@ Click on Preview botton to display the result of this configuration
 Dynatrace dashboards : you can find more smart dashboards on bizopsconfigurator which is Open Source Software with a GitOps approach. 
 And later you could share your own awesome dashboards on this plateform ==> [bizopsconfigurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#miscTools)  
 
+
+# Troubleshoot  
+If the downlaod doesn't work, verify thes configurations :   
+
+| Step  | test |Status |
+| --------------- | --------------- | --------------- | 
+| export NEW_CLI=1 | echo "NEW_CLI="$NEW_CLI  | ✔️ |
+| export MyTenant=<YYYY>.live.dynatrace.com | echo "MyTenant=https://"$MyTenant  | ✔️ |
+| export MyToken=<dt.1234567890>| echo "MyToken="$MyToken | ✔️ |
+| MyToken is an API Token| with all the privileges | ✔️ |
+| OneAgent installed with host-group=appname | service oneagent status | ✔️ |
+| easytravel installed and started (accessible from your browser) | docker ps --format "{{.ID}}\t{{.Status}}\t{{.Names}}" | ✔️ |
+| cd;git clone https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding (this lab) | cd;ls -lrt dynatrace-lab-onboarding | ✔️ |
+| monaco installed with NEW_CLI=1 (new monaco cli version) | cd;cd dynatrace-lab-onboarding;./monaco --version  | ✔️ |
+| monaco download -e=environments.yaml mydownload (for backup) | cd;ls -lrt dynatrace-lab-onboarding/mydownload/free_trial | ✔️ |
        
