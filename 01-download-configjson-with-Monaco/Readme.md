@@ -29,7 +29,7 @@ You will backup all the configuration file of the Dynatrace Saas tenant
 - [02-deploy-configjson-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/02-deploy-configjson-with-Monaco) => to deploy all the configuration for easytravel on your tenant  
 
        
-# troubleshoot  
+# Troubleshoot  
 If the downlaod doesn't work, verify thes configurations :   
 
 | Step  | test |Status |
