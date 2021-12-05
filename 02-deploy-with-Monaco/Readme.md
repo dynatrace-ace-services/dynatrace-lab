@@ -33,7 +33,7 @@ You will import :
 3) deploy the configuration 
 
        cd;cd dynatrace-lab-onboarding;
-       ./monaco deploy -e=environments.yaml -s=free_trial 02-deploy-with-Monaco
+       ./monaco deploy -e=environments.yaml 02-deploy-with-Monaco
        
 # Result  
 verify on your Dynatrace tenant the result of the imported configurations  
@@ -78,7 +78,7 @@ And later you could share your own awesome dashboards on this plateform ==> [biz
 
 
 # Troubleshoot  
-If the downlaod doesn't work, verify thes configurations :   
+If the deploy doesn't work, verify thes configurations :   
 
 | Step  | test |Status |
 | --------------- | --------------- | --------------- | 
