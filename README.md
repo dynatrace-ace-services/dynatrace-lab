@@ -15,4 +15,4 @@ In this lab we only use the monaco version **NEW_CLI=1** (the future of monaco)
 # About monaco
 - [Monaco installation & documentation](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/installation)  
 - [What is Monaco](https://github.com/dynatrace-ace-services/quickstart-ace-configurator/blob/main/What-is-Monaco-for-Dynatrace.pdf)  
-- [Monaco : example & catalog](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)  
+- [Monaco : example & catalogue](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)  
