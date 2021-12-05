@@ -23,6 +23,6 @@ The complement of the lab are here.
   - Linux VM with easytravel
 
 - [MonacoCatalogue](https://github.com/dynatrace-ace-services/quickstart-ace-configurator) => for starting your own configuration "hostgroup" and monaco template   
- Prerequisite :   
-  - Can be used in your own environment for a QuickStart
+ No specific prerequisite :   
+  - Can be used in your own environment as a QuickStart
 
