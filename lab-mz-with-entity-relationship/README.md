@@ -9,7 +9,7 @@ In this lab the rules of your management zone have been modified with entity-rel
 Copie the directory on monaco directory:  
 
     cd
-    cp -R lab-mz-with-entity-relationship/ lab-onboarding/
+    cp -R lab-mz-with-entity-relationship/lab-onboarding/
 	   
 Validate your variables  
 
