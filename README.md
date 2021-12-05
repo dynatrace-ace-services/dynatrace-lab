@@ -8,8 +8,8 @@ In this lab we only use the monaco version **NEW_CLI=1** (the future of monaco)
 # Lab - follow these steps   
 
 - [00-install-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/00-install-Monaco) => to install monaco and connect it to your dynatrace free trial environment   
-- [01-download-configjson-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/01-download-configjson-with-Monaco) => to download your configuration and backup the json file
-- [02-deploy-configjson-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/02-deploy-configjson-with-Monaco) => to deploy all the configuration for easytravel on your tenant  
+- [01-download-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/01-download-with-Monaco) => to download your configuration and backup the json file
+- [02-deploy-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/02-deploy-with-Monaco) => to deploy all the configuration for easytravel on your tenant  
 
 
 # About monaco

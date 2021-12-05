@@ -46,5 +46,5 @@ you need these privileges at least  (more info about token permission for monaco
 
 # Next Step
 
-- [01-download-configjson-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/01-download-configjson-with-Monaco) => to download your configuration and backup the json file
+- [01-download-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/01-download-with-Monaco) => to download your configuration and backup the json file
 
