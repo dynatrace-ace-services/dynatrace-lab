@@ -23,9 +23,13 @@ You will backup all the configuration file of the Dynatrace Saas tenant
 
        cd;cd dynatrace-lab-onboarding;
        ls -lrt mydownload/free_trial
+
+# Next Step
+
+- [02-deploy-configjson-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/02-deploy-configjson-with-Monaco) => to deploy all the configuration for easytravel on your tenant  
+
        
-       
-4) troubleshoot  
+# troubleshoot  
 If the downlaod doesn't work, verify thes configurations :   
 
 | Step  | test |Status |
@@ -40,7 +44,4 @@ If the downlaod doesn't work, verify thes configurations :
 | monaco installed with NEW_CLI=1 (new monaco cli version) | cd;cd dynatrace-lab-onboarding;./monaco --version  | ✔️ |
 | monaco download -e=environments.yaml mydownload (for backup) | cd;ls -lrt dynatrace-lab-onboarding/mydownload/free_trial | ✔️ |
 
-# Next Step
-
-- [02-deploy-configjson-with-Monaco](https://github.com/dynatrace-ace-services/dynatrace-lab-onboarding/tree/main/02-deploy-configjson-with-Monaco) => to deploy all the configuration for easytravel on your tenant  
 
