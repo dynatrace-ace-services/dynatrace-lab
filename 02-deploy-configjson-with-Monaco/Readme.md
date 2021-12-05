@@ -35,7 +35,8 @@ You will import :
        cd;cd dynatrace-lab-onboarding;
        ./monaco deploy -e=environments.yaml -s=free_trial 02-deploy-configjson-with-Monaco
        
-4) verify on your Dynatrace environment the result of the imported configurations  
+# Result  
+verify on your Dynatrace tenant the result of the imported configurations  
  
 - **application-web and app-detection-rule** : _Settings > Web and mobile monitoring > Application detection_ 
 ![image](https://user-images.githubusercontent.com/40337213/116122980-b6763b00-a6c2-11eb-93f3-dde596728237.png)
