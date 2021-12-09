@@ -42,7 +42,7 @@ you need these privileges at least  (more info about token permission for monaco
     <img src="https://user-images.githubusercontent.com/40337213/116117875-0520d680-a6bd-11eb-9085-acce6b56b395.png" width="600" height="100">   
   
 	   export MyTenant=<YYYY>.live.dynatrace.com  (without **https://** and **/** at the end of the line)
-	   export MyAPIToken=<dt.1234567890>          (API Token)
+	   export MyToken=<dt.1234567890>             (API Token)
 
 # Next Step
 
