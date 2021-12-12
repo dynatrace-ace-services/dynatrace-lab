@@ -1,4 +1,6 @@
 #  Dynatrace labs
+![image](https://user-images.githubusercontent.com/40337213/145724361-890e0ba2-80ce-4b80-bd2b-ce8fd313180e.png)
+
 
 The complement of the lab are here.  
 
