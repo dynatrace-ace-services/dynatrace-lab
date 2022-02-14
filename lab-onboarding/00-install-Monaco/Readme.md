@@ -7,13 +7,15 @@ Paste the command on you VM.
 
        cd;
        git clone https://github.com/dynatrace-ace-services/dynatrace-lab.git
+       ls;
 
 2) download monaco (monaco-linux-amd64 -more distrib [here](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/))  
 
        cd;cd dynatrace-lab/lab-onboarding;
        wget https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/latest/download/monaco-linux-amd64;
        mv monaco-linux-amd64 monaco;
-       chmod +x monaco
+       chmod +x monaco;
+       ls;
 
 3) new version NEW_CLI=1   
 In this lab we will use only the new cli version of monaco.  
