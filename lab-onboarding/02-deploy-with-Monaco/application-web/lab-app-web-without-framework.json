@@ -90,13 +90,13 @@
   "injectionMode": "JAVASCRIPT_TAG",
   "javaScriptFrameworkSupport": {
    "activeXObject": false,
-   "angular": true,
+   "angular": false,
    "dojo": false,
    "extJS": false,
-   "icefaces": true,
-   "jQuery": true,
+   "icefaces": false,
+   "jQuery": false,
    "mooTools": false,
-   "prototype": true
+   "prototype": false
   },
   "libraryFileLocation": "",
   "monitoringDataPath": "",
@@ -140,3 +140,4 @@
  },
  "xhrActionKeyPerformanceMetric": "VISUALLY_COMPLETE"
 }
+
