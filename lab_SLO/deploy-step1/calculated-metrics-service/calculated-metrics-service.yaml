@@ -1,6 +1,0 @@
-config:
-- requestcount_sloperf: requestcount_sloperf.json
-requestcount_sloperf:
-- name: {{.Env.MZ}}-slo_perf
-- mz: {{.Env.MZ}}
-- sli: {{.Env.SliPerf}}
