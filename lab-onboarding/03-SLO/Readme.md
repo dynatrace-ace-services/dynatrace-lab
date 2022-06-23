@@ -6,6 +6,7 @@ Export the variable:
 	 export MyTenant=<MyTenant>
 	 export MyToken=<MyToken>
 	 export MZ=<MZ-name>
+	 export SliPerf=500
 	 
 
 Deploy the configuration:
