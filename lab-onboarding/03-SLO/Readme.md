@@ -2,6 +2,7 @@
 
 Export the variable:
 
+	 export NEW_CLI=1
 	 export MyTenant=<MyTenant>
 	 export MyToken=<MyToken>
 	 export MZ=<MZ-name>
