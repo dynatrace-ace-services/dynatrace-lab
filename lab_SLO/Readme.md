@@ -9,6 +9,6 @@ Export the variable:
 
 Deploy the configuration:
 
-	cd;cd quickstart-ace-configurator;
-	./monaco deploy -e=environments.yaml SLO/deploy-step1
-	./monaco deploy -e=environments.yaml SLO/deploy-step2
+	cd;cd dynatrace_lab;
+	./monaco deploy -e=environments.yaml lab_SLO/deploy-step1
+	./monaco deploy -e=environments.yaml lab_SLO/deploy-step2
