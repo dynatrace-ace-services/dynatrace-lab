@@ -6,7 +6,7 @@
     "comparison": "GREATER_THAN_OR_EQUAL",
     "negate": false,
     "type": "NUMBER",
-    "value": "{{.threshold}}"
+    "value": "{{.mz2}}"
    }
   },
 {
