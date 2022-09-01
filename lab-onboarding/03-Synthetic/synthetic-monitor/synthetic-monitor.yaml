@@ -8,18 +8,18 @@ clickpath-1:
 - url: "http://{{.Env.Hostname}}"
 - mz: "{{.Env.Appname}}"
 - enable: "{{.Env.EnableSynthetic}}"
-- applicationId: "/application-web/app-1.id"
+#- applicationId: "/application-web/app-1.id"
 
 clickpath-2:
 - name: "{{.Env.Appname}}-clickpath angular"
 - url: "http://{{.Env.Hostname}}:9079"
 - mz: "{{.Env.Appname}}"
 - enable: "{{.Env.EnableSynthetic}}"
-- applicationId: "/application-web/app-1.id"
+#- applicationId: "/application-web/app-1.id"
 
 httpmonitor-1:
 - name: "{{.Env.Appname}}-httpmonitor"
 - url: "http://{{.Env.Hostname}}"
 - mz: "{{.Env.Appname}}"
 - enable: "{{.Env.EnableSynthetic}}"
-- applicationId: "/application-web/app-1.id"
+#- applicationId: "/application-web/app-1.id"
