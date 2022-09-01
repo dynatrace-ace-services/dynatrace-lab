@@ -17,7 +17,7 @@ You will backup all the configuration file of the Dynatrace Saas tenant
  the directory **free_trial** is created localy (lab_monaco/free_trial) with all the json configuration files.
  
        cd;cd dynatrace-lab/lab-onboarding;
-       ./monaco download -e=environments.yaml mydownload -p=dashboards,management-zone,auto-tag
+       ./monaco download -e=environments.yaml mydownload
  
  - look at the configuration types backuped by monaco 
 
