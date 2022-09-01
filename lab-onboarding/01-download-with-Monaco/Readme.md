@@ -12,17 +12,17 @@ You will backup all the configuration file of the Dynatrace Saas tenant
 
        echo "NEW_CLI="$NEW_CLI;echo "MyTenant=https://"$MyTenant;echo "MyToken="$MyToken
 
-3) start with a backup of the configuration    
+3) start with a backup of the configuration   (optionnal) 
  monaco will backup your main Dynatrace configuration  
- the directory **free_trial** is created localy (lab_monaco/free_trial) with all you json configuration files exported.  
+ the directory **free_trial** is created localy (lab_monaco/free_trial) with all the json configuration files.
  
        cd;cd dynatrace-lab/lab-onboarding;
-       ./monaco download -e=environments.yaml mydownload
+       ./monaco download -e=environments.yaml mydownload -p=dashboards,management-zone,auto-tag
  
- - look at the configuration types backuped by monaco   
+ - look at the configuration types backuped by monaco 
 
        cd;cd dynatrace-lab/lab-onboarding;
-       ls -lrt mydownload/free_trial
+       ls -lrt mydownload/free_trial 
 
 # Next Step
 
