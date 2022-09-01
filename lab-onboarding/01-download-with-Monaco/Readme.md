@@ -19,9 +19,8 @@ You will backup all the configuration file of the Dynatrace Saas tenant
        cd;cd dynatrace-lab/lab-onboarding;
        ./monaco download -e=environments.yaml mydownload
        
- Don't care with this error message : 
- ![image](https://user-images.githubusercontent.com/40337213/187954339-4435f747-4dd5-40d0-89b2-cb30b09ee1bb.png)
-
+Don't care with this error message : 
+ERROR error getting client list from api calculated-metrics-log Failed to get existing configs for api calculated-metrics-log (HTTP 400)!
  
  - look at the configuration types backuped by monaco 
 
