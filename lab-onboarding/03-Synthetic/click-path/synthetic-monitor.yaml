@@ -1,0 +1,8 @@
+config:
+- clickpath: angular-clickpath.json
+
+clickpath:
+- name: "{{.Env.Appname}}-clickpath angular"
+- url: "http://{{.Env.Hostname}}:9079"
+- mz: "{{.Env.Appname}}"
+- enable: "{{.Env.EnableSynthetic}}"
