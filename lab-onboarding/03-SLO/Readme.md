@@ -12,4 +12,5 @@ Deploy the configuration:
 
 	cd;cd dynatrace-lab/lab-onboarding;
 	./monaco deploy -e=environments.yaml 03-SLO/deploy-step1
+	`sleep 1`
 	./monaco deploy -e=environments.yaml 03-SLO/deploy-step2
