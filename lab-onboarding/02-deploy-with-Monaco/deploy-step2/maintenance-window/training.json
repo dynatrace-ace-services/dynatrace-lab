@@ -16,8 +16,7 @@
     "matches": [
       {
         "type": null,
-        "managementZoneId": "{{.mzid}}",
-        "mzId": "{{.mzid}}",
+        "managementZoneName": "{{.name}}",
         "tags": [],
         "tagCombination": "AND"
       }
