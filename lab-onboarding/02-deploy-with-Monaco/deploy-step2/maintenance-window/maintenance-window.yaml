@@ -2,4 +2,3 @@ config:
 - training: training.json
 training:
 - name: "{{.Env.Appname}}"
-- mzid: "/management-zone/mz-1.id"
