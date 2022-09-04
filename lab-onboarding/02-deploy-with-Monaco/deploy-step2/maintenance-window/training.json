@@ -1,7 +1,6 @@
-[
- { "schemaId": "builtin:alerting.maintenance-window",
-   "scope": "environment",
-   "value": {
+[{"schemaId": "builtin:alerting.maintenance-window",
+  "scope": "environment",
+  "value": {
 	"enabled": true,
 	"generalProperties": {
 	  "name": "easytravel00",
