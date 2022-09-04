@@ -1,4 +1,5 @@
 {
+   "name": "easytravel00",
    "schemaId": "builtin:alerting.maintenance-window",
    "scope": "environment",
    "value": {
