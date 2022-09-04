@@ -36,6 +36,7 @@ You will import :
        ./monaco deploy -e=environments.yaml 02-deploy-with-Monaco/deploy-step1
 	   `sleep 1`
        ./monaco deploy -e=environments.yaml 02-deploy-with-Monaco/deploy-step2
+       ls
 	   
 # Result  
 verify on your Dynatrace tenant the result of the imported configurations  
