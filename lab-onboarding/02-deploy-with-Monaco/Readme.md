@@ -34,7 +34,7 @@ You will import :
 
        cd;cd dynatrace-lab/lab-onboarding;
        ./monaco deploy -e=environments.yaml 02-deploy-with-Monaco/deploy-step1;
-	`sleep 1`;
+	    `sleep 1`;
        ./monaco deploy -e=environments.yaml 02-deploy-with-Monaco/deploy-step2;
        ls
 	   
