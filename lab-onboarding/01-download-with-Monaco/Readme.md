@@ -17,7 +17,7 @@ You will backup all the configuration file of the Dynatrace Saas tenant
  the directory **free_trial** is created localy (lab_monaco/free_trial) with all the json configuration files.
  
        cd;cd dynatrace-lab/lab-onboarding;
-       ./monaco download -e=environments.yaml mydownload
+       ./monaco download -e=environments.yaml mydownload;
        
 Don't care with this error message :   
 ERROR error getting client list from api calculated-metrics-log Failed to get existing configs for api calculated-metrics-log (HTTP 400)!
