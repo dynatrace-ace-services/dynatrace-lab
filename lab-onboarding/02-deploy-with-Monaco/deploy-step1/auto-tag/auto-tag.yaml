@@ -1,7 +1,10 @@
 config:
 - app: app.json
 - env: env.json
+- toto: toto.json
 app:
 - name: app
 env:
 - name: env
+toto:
+- name: test
