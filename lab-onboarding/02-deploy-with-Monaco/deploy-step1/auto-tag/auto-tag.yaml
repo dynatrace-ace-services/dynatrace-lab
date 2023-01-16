@@ -6,5 +6,3 @@ app:
 - name: app
 env:
 - name: env
-toto:
-- name: {{.Env.myvariable}}
