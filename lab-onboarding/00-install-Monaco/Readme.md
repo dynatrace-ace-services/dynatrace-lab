@@ -12,7 +12,7 @@ Paste the command on you VM.
 2) download monaco (monaco-linux-amd64 -more distrib [here](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/))  
 
        cd;cd dynatrace-lab/lab-onboarding;
-       curl -L https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/download/v1.8.7/monaco-linux-amd64 -o monaco;
+       curl -L https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/download/latest/monaco-linux-amd64 -o monaco;
        chmod +x monaco;
        ls;
 
