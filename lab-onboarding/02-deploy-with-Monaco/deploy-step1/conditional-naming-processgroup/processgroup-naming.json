@@ -18,7 +18,7 @@
     "value": null
    },
    "key": {
-    "attribute": "DOCKER_STRIPPED_IMAGE_NAME"
+    "attribute": "DOCKER_CONTAINER_NAME"
    }
   }
  ],
