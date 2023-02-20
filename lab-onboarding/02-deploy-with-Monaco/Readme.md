@@ -30,12 +30,14 @@ You will import :
        echo "NEW_CLI="$NEW_CLI;echo "MyTenant=https://"$MyTenant;echo "MyToken="$MyToken;echo "Appname="$Appname;echo "Hostname="$Hostname;echo "Email="$Email 
 
 
-3) deploy the configuration 
-step1 
+3) deploy the configuration   
+step1   
+       
        cd;cd dynatrace-lab/lab-onboarding;
        ./monaco deploy -e=environments.yaml 02-deploy-with-Monaco/deploy-step1;
 
 Step2
+	
 	cd;cd dynatrace-lab/lab-onboarding;
        ./monaco deploy -e=environments.yaml 02-deploy-with-Monaco/deploy-step2;
        ls
