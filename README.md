@@ -62,7 +62,7 @@ OR ecport manually
     ./monaco deploy manifest.yaml
     echo "end step 5"
 
-# Step 6 (optionnal) : backup with monaco 
+# Step 6 (optional) : backup with monaco 
 
     cd;cd dynatrace-lab/template_monaco_v2
     mkdir backup
