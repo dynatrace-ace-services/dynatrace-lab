@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/40337213/145724361-890e0ba2-80ce-4b80-bd2b-ce8fd313180e.png)
 
 In this lab you will import all the configurations with [monaco-V2](https://www.dynatrace.com/support/help/manage/configuration-as-code) : 
-We will use the lab VM as a tooling host and not as a application host. Monaco can be installed anywhere, on your desktop (linux, windows, k8s tooling) but never on a application host ! (except during this training)     
+We will use the lab VM as a tooling host and not as a application host.      
 
     application-web
     app-detection-rule
@@ -17,7 +17,11 @@ We will use the lab VM as a tooling host and not as a application host. Monaco c
     sevice-naming
     dashboard
     synthetic (disabled)
-    
+
+
+## Step 0 : a tooling host for monaco 
+
+Monaco can be installed anywhere, on youryou desktop : linux, windows, or on a tooling k8s, but never on an application host ! (except during this training)
 
 ## Step 1 : clone this git
 
