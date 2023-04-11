@@ -20,9 +20,9 @@ In this lab you will import all the configurations with [monaco-V2]:(https://www
 
 ## Step 1 : clone this git
 
-    cd;
-    git clone https://github.com/dynatrace-ace-services/dynatrace-lab;
-    ls;
+    cd
+    git clone https://github.com/dynatrace-ace-services/dynatrace-lab
+    echo "end step 1"
     
 
 # Step 2 : install monaco V2
@@ -30,6 +30,7 @@ In this lab you will import all the configurations with [monaco-V2]:(https://www
     cd;cd dynatrace-lab/template_monaco_v2
     curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
     chmod +x monaco
+    echo "end step 2"
     
 # Step 3 : export the variables 
 
@@ -37,6 +38,7 @@ open the file `lab_monaco_env.sh`
 and set the variables
   
     . lab_monaco_env.sh
+    echo "end step 3"
 
 OR ecport manually 
 
@@ -52,14 +54,17 @@ OR ecport manually
 # Step 4 : validate the variables
 
     echo "DT_TENANT_URL="$DT_TENANT_URL;echo "DT_API_TOKEN="$DT_API_TOKEN;echo "Appname="$Appname;echo "Hostname="$Hostname;echo "Email="$Email
+    echo "end step 4"
     
 # Step 5 : deploy with monaco 
 
     cd;cd dynatrace-lab/template_monaco_v2
     ./monaco deploy manifest.yaml
+    echo "end step 5"
 
 # Step 6 (optionnal) : backup with monaco 
 
     cd;cd dynatrace-lab/template_monaco_v2
     mkdir backup
     ./monaco download manifest.yaml -e MyEnd -o backup
+    echo "end step 6"
