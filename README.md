@@ -22,6 +22,7 @@ In this lab you will import all the configurations with [monaco-V2]:(https://www
 
     cd;
     git clone https://github.com/dynatrace-ace-services/dynatrace-lab;
+    ls;
     
 
 # Step 2 : install monaco V2
