@@ -1,4 +1,4 @@
-#  Dynatrace Lab - Monitoring as Code
+#  Dynatrace Lab - Monitoring as Code with Monaco v2
 
 ![image](https://user-images.githubusercontent.com/40337213/145724361-890e0ba2-80ce-4b80-bd2b-ce8fd313180e.png)
 
