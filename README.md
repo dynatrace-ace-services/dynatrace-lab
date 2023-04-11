@@ -1,4 +1,63 @@
 #  Dynatrace Lab
 ![image](https://user-images.githubusercontent.com/40337213/145724361-890e0ba2-80ce-4b80-bd2b-ce8fd313180e.png)
-[5-Day Dynatrace Lab - Automate observability & monitoring](https://dynatrace-my.sharepoint.com/personal/jean_louis_lormeau_dynatrace_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjean%5Flouis%5Flormeau%5Fdynatrace%5Fcom%2FDocuments%2FTraining%2F5%2DDay%20Dynatrace%20Lab%20%2D%20Automate%20observability%20%26%20monitoring)
 
+In this lab you will import all the configurations with [monaco-V2]:(https://www.dynatrace.com/support/help/manage/configuration-as-code) : 
+
+    application-web
+    app-detection-rule
+    management-zone
+    autotag
+    alerting-profile
+    notification
+    maintenance-window
+    host-naming
+    processgroup-naming
+    sevice-naming
+    dashboard
+    synthetic (disabled)
+    
+
+## Step 1 : clone this git
+
+    cd;
+    git clone https://github.com/dynatrace-ace-services/dynatrace-lab;
+    
+
+# Step 2 : install monaco
+
+    cd;cd dynatrace-lab/template_monaco_v2
+    curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
+    chmod +x monaco
+    
+# Step 3 : export the variables 
+
+open the file `lab_monaco_env.sh`  
+and set the variables
+  
+    . lab_monaco_env.sh
+
+OR ecport manually 
+
+    #Export variables Env
+    export DT_TENANT_URL=https://abcd.live.dynatrace.com
+    export DT_API_TOKEN=XXXX
+
+    #Export variables appli
+    export Appname=easytravelxx
+    export Hostname=zzzz.yyyy.cloudapp.azure.com
+    export Email=myemail@email.com
+
+# Step 4 : validate the variables
+
+    echo "DT_TENANT_URL="$DT_TENANT_URL;echo "DT_API_TOKEN="$DT_API_TOKEN;echo "Appname="$Appname;echo "Hostname="$Hostname;echo "Email="$Email
+    
+# Step 5 : deploy with monaco 
+
+    cd;cd dynatrace-lab/template_monaco_v2
+    ./monaco deploy manifest.yaml
+
+# Step 6 (optionnal) : backup with monaco 
+
+    cd;cd dynatrace-lab/template_monaco_v2
+    mkdir backup
+    ./monaco download manifest.yaml -e MyEnd -o backup
