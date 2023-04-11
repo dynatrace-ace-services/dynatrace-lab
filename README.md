@@ -24,7 +24,7 @@ In this lab you will import all the configurations with [monaco-V2]:(https://www
     git clone https://github.com/dynatrace-ace-services/dynatrace-lab;
     
 
-# Step 2 : install monaco
+# Step 2 : install monaco V2
 
     cd;cd dynatrace-lab/template_monaco_v2
     curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
