@@ -2,8 +2,8 @@
 manifestVersion: "1.0"
 
 projects:
-- name: project-deploy1
-- name: project-deploy2
+- name: project_deploy1
+- name: project_deploy2
 
 environmentGroups:
 - name: default
