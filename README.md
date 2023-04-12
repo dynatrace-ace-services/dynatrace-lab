@@ -71,5 +71,5 @@ OR ecport manually
 
     cd;cd dynatrace-lab/template_monaco_v2
     mkdir backup
-    ./monaco download manifest.yaml -e MyEnd -o backup
+    ./monaco download manifest.yaml -e MyEnv -o backup
     echo "end step 6"
