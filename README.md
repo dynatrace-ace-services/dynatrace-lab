@@ -36,24 +36,12 @@ Monaco can be installed anywhere, on your desktop : linux, windows, or on a tool
     chmod +x monaco
     echo "end step 2"
     
-## Step 3 : export the variables 
+## Step 3 : set the variables 
 
-open the file `lab_env.sh`  
-and set the variables
-  
-    . lab_env.sh
+set thevariables on linux environment  
+
+    sh set_the_variables.sh
     echo "end step 3"
-
-OR export manually 
-
-    #Export variables Env
-    export DT_TENANT_URL=https://abcd.live.dynatrace.com
-    export DT_API_TOKEN=XXXX
-
-    #Export variables appli
-    export Appname=easytravelxx
-    export Hostname=zzzz.yyyy.cloudapp.azure.com
-    export Email=myemail@email.com
 
 ## Step 4 : validate the variables
 
