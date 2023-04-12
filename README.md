@@ -31,14 +31,14 @@ Monaco can be installed anywhere, on youryou desktop : linux, windows, or on a t
 
 ## Step 2 : install monaco V2
 
-    cd;cd dynatrace-lab/template_monaco_v2
+    cd;cd dynatrace-lab/
     curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
     chmod +x monaco
     echo "end step 2"
     
 ## Step 3 : export the variables 
 
-open the file `lab_monaco_env.sh`  
+open the file `lab_env.sh`  
 and set the variables
   
     . lab_env.sh
@@ -62,8 +62,10 @@ OR ecport manually
     
 ## Step 5 : deploy with monaco 
 
-    cd;cd dynatrace-lab/template_monaco_v2
-    ./monaco deploy -c manifest.yaml
+    cd;cd dynatrace-lab/
+    ./monaco deploy -c manifest.yaml -p project-deploy1
+	sleep 5
+    ./monaco deploy -c manifest.yaml -p project-deploy2
     echo "end step 5"
 
 ## Step 6 (optional) : backup with monaco 
