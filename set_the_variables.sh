@@ -35,4 +35,4 @@ do
                 "A") APPLY="Y"
         esac
 done
-echo "Great - the variables have been setted"
+echo "end step 3"
