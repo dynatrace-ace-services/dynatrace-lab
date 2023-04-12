@@ -2,7 +2,6 @@
 manifestVersion: "1.0"
 
 projects:
-- name: project
 - name: project-deploy1
 - name: project-deploy2
 
