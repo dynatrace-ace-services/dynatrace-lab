@@ -16,7 +16,6 @@ We will use the lab VM as a tooling host and not as a application host.
     processgroup-naming
     sevice-naming
     dashboard
-    synthetic (disabled)
 
 
 ## Step 0 : a tooling host for monaco 
