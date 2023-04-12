@@ -1,8 +1,0 @@
-config:
-- httpmonitor: lab-http-monitor.json
-
-httpmonitor:
-- name: "{{.Env.Appname}}-httpmonitor"
-- url: "http://{{.Env.Hostname}}"
-- mz: "{{.Env.Appname}}"
-- enable: "{{.Env.EnableSynthetic}}"
