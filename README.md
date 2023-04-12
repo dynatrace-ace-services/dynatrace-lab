@@ -44,7 +44,7 @@ and set the variables
     . lab_env.sh
     echo "end step 3"
 
-OR ecport manually 
+OR export manually 
 
     #Export variables Env
     export DT_TENANT_URL=https://abcd.live.dynatrace.com
