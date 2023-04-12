@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/40337213/145724361-890e0ba2-80ce-4b80-bd2b-ce8fd313180e.png)
 
 In this lab you will import all the configurations with [monaco-V2](https://www.dynatrace.com/support/help/manage/configuration-as-code) : 
-We will use the lab VM as a tooling host and not as a application host.      
+We will use the lab VM as a tooling host and not as an application host.      
 
     application-web
     app-detection-rule
@@ -63,9 +63,9 @@ OR ecport manually
 ## Step 5 : deploy with monaco 
 
     cd;cd dynatrace-lab/
-    ./monaco deploy -c manifest.yaml -p project-deploy1
-	sleep 5
-    ./monaco deploy -c manifest.yaml -p project-deploy2
+    ./monaco deploy -c manifest.yaml -p project_deploy1
+    sleep 5
+    ./monaco deploy -c manifest.yaml -p project_deploy2
     echo "end step 5"
 
 ## Step 6 (optional) : backup with monaco 
