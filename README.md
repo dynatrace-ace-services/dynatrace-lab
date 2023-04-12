@@ -18,9 +18,9 @@ We will use the lab VM as a tooling host and not as an application host.
     dashboard
 
 
-## Step 0 : a tooling host for monaco 
+## Step 0 : a tool host for monaco 
 
-Monaco can be installed anywhere, on youryou desktop : linux, windows, or on a tooling k8s, but never on an application host ! (except during this training)
+Monaco can be installed anywhere, on your desktop : linux, windows, or on a tooling k8s, but never on an application host ! (except during this training)
 
 ## Step 1 : clone this git
 
