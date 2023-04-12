@@ -42,7 +42,7 @@ Monaco can be installed anywhere, on youryou desktop : linux, windows, or on a t
 open the file `lab_monaco_env.sh`  
 and set the variables
   
-    . lab_monaco_env.sh
+    . lab_env.sh
     echo "end step 3"
 
 OR ecport manually 
