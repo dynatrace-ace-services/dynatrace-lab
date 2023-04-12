@@ -38,11 +38,16 @@ Monaco can be installed anywhere, on your desktop : linux, windows, or on a tool
     
 ## Step 3 : set the variables 
 
-set thevariables on linux environment  
+use this script to set the variables on linux environment  
 
     sh set_the_variables.sh
     echo "end step 3"
 
+OR open the file lab_env.sh and set the variables manually
+    
+    . lab_env.sh
+    echo "end step 3"
+     
 ## Step 4 : validate the variables
 
     echo "DT_TENANT_URL="$DT_TENANT_URL;echo "DT_API_TOKEN="$DT_API_TOKEN;echo "Appname="$Appname;echo "Hostname="$Hostname;echo "Email="$Email
