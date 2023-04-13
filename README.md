@@ -91,9 +91,11 @@ keep only your id in this file (delete the ohers) and chnage the name like here 
     
     cd;cd dynatrace-lab/backup-mz
     ../monaco deploy manifest.yaml
-    echo "end of step 6 - a new mz has been deployed on Dynatrace"
+    
+On Dynatrace UI, verify that you have a new management zone : `My_easytravelXX`, similair to the previous one `easytravelxx`
 
-On Dynatrace UI, verify that you have a new management zone : `My_easytravelXX`, similair to the previous one `easytravelxx`   
+    echo "Go to the mz settings on the UI : https://"$DT_TENANT_URL"/ui/settings/builtin:management-zones"
+    echo "end of step 6 - a new mz has been deployed on Dynatrace "
     
     
 
