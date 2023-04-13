@@ -53,6 +53,7 @@ set the variables on the local session
      
 ## Step 4 : deploy with monaco 
 
+    cd;cd dynatrace-lab
     ./monaco deploy -c manifest.yaml -p project_deploy1
     sleep 2
     ./monaco deploy -c manifest.yaml -p project_deploy2
@@ -60,7 +61,7 @@ set the variables on the local session
 
 ## Step 5 (optional) : backup with monaco 
 
-    cd;cd dynatrace-lab/template_monaco_v2
+    cd;cd dynatrace-lab
     mkdir backup
     ./monaco download manifest.yaml -e MyEnv -o backup
     echo "end step 5"
