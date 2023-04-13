@@ -17,7 +17,7 @@ do
         read  -p "Input Selection (0, 1, 2, 3, 4 or A ): " reponse
 
         case "$reponse" in
-                "0") read  -p "0) export DT_TENANT_URL=" value
+                "0") read  -p "0) export DT_TENANT_URL=https://" value
                      sed -i 's/DT_TENANT_URL=.*$/DT_TENANT_URL=\"https\:\/\/'$value'\"/g' ./lab_env.sh;. ./lab_env.sh
                 ;;
                 "1") read  -p "1) export DT_API_TOKEN=" value
