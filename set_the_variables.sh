@@ -33,6 +33,8 @@ do
                      sed -i s/Email=.*$/Email=\"$value\"/g ./lab_env.sh;. ./lab_env.sh
                 ;;
                 "A") APPLY="Y"
+                     . ./lab_env.sh
+                ;;
         esac
 done
 echo "end step 3"
