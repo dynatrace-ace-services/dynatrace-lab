@@ -45,7 +45,7 @@ use this script to configure the variables on linux environment
 
 open the file `lab_env.sh` to validate the variables manually
     
-    vim lab_env.sh
+    cat lab_env.sh
     
 set the variables on the local session
     
