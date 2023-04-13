@@ -27,7 +27,7 @@ We will use the lab VM as a tooling host and not as an application host.
 
     cd
     git clone https://github.com/dynatrace-ace-services/dynatrace-lab
-    echo "end of step 1"
+    echo "end of step 1 - the lab is copy here home/dynatrace_lab"
     
 
 ## Step 2 : install monaco V2
@@ -35,7 +35,7 @@ We will use the lab VM as a tooling host and not as an application host.
     cd;cd dynatrace-lab/
     curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
     chmod +x monaco
-    echo "end of step 2"
+    echo "end of step 2 - monaco v2 is inastelled on your tool host"
     
 ## Step 3 : set the variables 
 
@@ -50,7 +50,7 @@ open the file `lab_env.sh` to validate the variables manually
 set the variables on the local session
     
     . lab_env.sh
-    echo "end of step 3"
+    echo "end of step 3 - the variables have been setted on the local session"
      
 ## Step 4 : deploy with monaco 
 
@@ -58,11 +58,42 @@ set the variables on the local session
     ./monaco deploy -c manifest.yaml -p project_deploy1
     sleep 2
     ./monaco deploy -c manifest.yaml -p project_deploy2
-    echo "end of step 4"
+    echo "end of step 4 - the configuration has been deployed on the tenant"
 
 ## Step 5 (optional) : backup with monaco 
 
     cd;cd dynatrace-lab
     mkdir backup
     ./monaco download manifest.yaml -e MyEnv -o backup
-    echo "end of step 5"
+    echo "end of step 5 - the full configuration has been backuped"
+
+## Step 6 (optional) : redeploy specific management-zone configuration from backup json 
+
+download mz configuration 
+
+    cd;cd dynatrace-lab
+    ./monaco download manifest.yaml -e MyEnv -a management-zone -o backup-mz
+    
+modifiy config.yaml for mz
+
+    cd backup-mz/project_MyEnv/management-zone
+    vim config.yaml
+
+keep only your id in this file (delete the ohers) and chnage the name like here : 
+    
+    delete the id section dfferent to your managament-zone
+    rename your management-zone
+    
+![image](https://user-images.githubusercontent.com/40337213/231715513-921c7c63-4fdb-4ba5-93e3-9dab44e9620c.png)
+
+ 
+ redeploy 
+    
+    cd;cd dynatrace-lab/backup-mz
+    ../monaco deploy manifest.yaml
+    echo "end of step 6"
+
+On Dynatrace UI, verify that you have a new management zone : `My_easytravelXX`, similair to the previous one `easytravelxx`   
+    
+    
+
