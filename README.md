@@ -27,7 +27,7 @@ We will use the lab VM as a tooling host and not as an application host.
 
     cd
     git clone https://github.com/dynatrace-ace-services/dynatrace-lab
-    echo "end step 1"
+    echo "end of step 1"
     
 
 ## Step 2 : install monaco V2
@@ -35,7 +35,7 @@ We will use the lab VM as a tooling host and not as an application host.
     cd;cd dynatrace-lab/
     curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
     chmod +x monaco
-    echo "end step 2"
+    echo "end of step 2"
     
 ## Step 3 : set the variables 
 
@@ -50,7 +50,7 @@ open the file `lab_env.sh` to validate the variables manually
 set the variables on the local session
     
     . lab_env.sh
-    echo "end step 3"
+    echo "end of step 3"
      
 ## Step 4 : deploy with monaco 
 
@@ -58,11 +58,11 @@ set the variables on the local session
     ./monaco deploy -c manifest.yaml -p project_deploy1
     sleep 2
     ./monaco deploy -c manifest.yaml -p project_deploy2
-    echo "end step 4"
+    echo "end of step 4"
 
 ## Step 5 (optional) : backup with monaco 
 
     cd;cd dynatrace-lab
     mkdir backup
     ./monaco download manifest.yaml -e MyEnv -o backup
-    echo "end step 5"
+    echo "end of step 5"
