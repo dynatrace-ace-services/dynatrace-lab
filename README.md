@@ -84,7 +84,7 @@ keep only your id in this file (delete the ohers) and chnage the name like here 
     delete the id section dfferent to your managament-zone
     rename your management-zone
     
-![image](https://user-images.githubusercontent.com/40337213/231715513-921c7c63-4fdb-4ba5-93e3-9dab44e9620c.png)
+![image](https://user-images.githubusercontent.com/40337213/231716709-8bf56d5c-df96-4b50-95b2-9ed2a8a8f577.png)
 
  
  redeploy 
