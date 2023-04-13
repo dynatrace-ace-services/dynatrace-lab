@@ -37,4 +37,4 @@ do
                 ;;
         esac
 done
-echo "end step 3"
+echo "to set the variables: . lab_env.sh"
