@@ -36,35 +36,29 @@ Monaco can be installed anywhere, on your desktop : linux, windows, or on a tool
     chmod +x monaco
     echo "end step 2"
     
-## Step 3 : configure the variables 
+## Step 3 : set the variables 
 
 use this script to set the variables on linux environment  
 
-    sh configure_the_variables.sh
+    sh set_the_variables.sh
     echo "end step 3"
 
 OR open the file `lab_env.sh` and configure the variables manually
     
-    vi lab_env.sh
+    vim lab_env.sh
     echo "end step 3"
      
-## Step 4 : set the variables
+## Step 4 : deploy with monaco 
 
     . lab_env.sh
-    echo "DT_TENANT_URL="$DT_TENANT_URL;echo "DT_API_TOKEN="$DT_API_TOKEN;echo "Appname="$Appname;echo "Hostname="$Hostname;echo "Email="$Email
-    echo "end step 4"
-    
-## Step 5 : deploy with monaco 
-
-    cd;cd dynatrace-lab/
     ./monaco deploy -c manifest.yaml -p project_deploy1
     sleep 5
     ./monaco deploy -c manifest.yaml -p project_deploy2
-    echo "end step 5"
+    echo "end step 4"
 
-## Step 6 (optional) : backup with monaco 
+## Step 5 (optional) : backup with monaco 
 
     cd;cd dynatrace-lab/template_monaco_v2
     mkdir backup
     ./monaco download manifest.yaml -e MyEnv -o backup
-    echo "end step 6"
+    echo "end step 5"
