@@ -13,7 +13,7 @@ do
         echo "4) export Email="$Email
         echo "A) apply the variables (Ctrl/c to quit) "
         echo ""
-        sleep 0.1
+        sleep 0.2
         read  -p "Input Selection (0, 1, 2, 3, 4 or A ): " reponse
 
         case "$reponse" in
