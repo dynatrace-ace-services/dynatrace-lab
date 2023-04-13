@@ -38,13 +38,17 @@ Monaco can be installed anywhere, on your desktop : linux, windows, or on a tool
     
 ## Step 3 : set the variables 
 
-use this script to set the variables on linux environment  
+use this script to configure the variables on linux environment  
 
     sh set_the_variables.sh
 
-OR open the file `lab_env.sh` and configure the variables manually
+open the file `lab_env.sh` to validate the variables manually
     
     vim lab_env.sh
+    
+set the variables on the local session
+    
+    . lab_env.sh
     echo "end step 3"
      
 ## Step 4 : deploy with monaco 
