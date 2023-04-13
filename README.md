@@ -52,7 +52,7 @@ OR open the file `lab_env.sh` and configure the variables manually
 
     . lab_env.sh
     ./monaco deploy -c manifest.yaml -p project_deploy1
-    sleep 5
+    sleep 2
     ./monaco deploy -c manifest.yaml -p project_deploy2
     echo "end step 4"
 
