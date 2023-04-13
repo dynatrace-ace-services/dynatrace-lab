@@ -18,7 +18,7 @@ do
 
         case "$reponse" in
                 "0") read  -p "0) export DT_TENANT_URL=" value
-                     sed -i s/DT_TENANT_URL=.*$/DT_TENANT_URL=\"$value\"/g ./lab_env.sh;. ./lab_env.sh
+                     sed -i 's/DT_TENANT_URL=.*$/DT_TENANT_URL=\"https\:\/\/'$value'\"/g' ./lab_env.sh;. ./lab_env.sh
                 ;;
                 "1") read  -p "1) export DT_API_TOKEN=" value
                      sed -i s/DT_API_TOKEN=.*$/DT_API_TOKEN=\"$value\"/g ./lab_env.sh;. ./lab_env.sh
