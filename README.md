@@ -53,7 +53,6 @@ set the variables on the local session
      
 ## Step 4 : deploy with monaco 
 
-    . lab_env.sh
     ./monaco deploy -c manifest.yaml -p project_deploy1
     sleep 2
     ./monaco deploy -c manifest.yaml -p project_deploy2
