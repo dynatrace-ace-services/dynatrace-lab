@@ -41,7 +41,6 @@ Monaco can be installed anywhere, on your desktop : linux, windows, or on a tool
 use this script to set the variables on linux environment  
 
     sh set_the_variables.sh
-    echo "end step 3"
 
 OR open the file `lab_env.sh` and configure the variables manually
     
