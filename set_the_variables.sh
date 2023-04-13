@@ -11,10 +11,10 @@ do
         echo "2) export Appname="$Appname
         echo "3) export Hostname="$Hostname
         echo "4) export Email="$Email
-        echo "A) apply  "
+        echo "A) apply the variables (Ctrl/c to quit) "
         echo ""
         sleep 0.1
-        read  -p "Input Selection (0, 1, 2, 3, 4 or A): " reponse
+        read  -p "Input Selection (0, 1, 2, 3, 4 or A ): " reponse
 
         case "$reponse" in
                 "0") read  -p "0) export DT_TENANT_URL=" value
