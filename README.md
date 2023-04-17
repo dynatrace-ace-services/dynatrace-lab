@@ -27,7 +27,7 @@ We will use the lab VM as a tooling host and not as an application host.
 
     cd
     git clone https://github.com/dynatrace-ace-services/dynatrace-lab
-    echo "end of step 1 - the lab is copy here home/dynatrace_lab"
+    echo "end of step 1 - the lab is copy here home/dynatrace-lab"
     
 
 ## Step 2 : install monaco V2
