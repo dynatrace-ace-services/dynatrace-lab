@@ -63,8 +63,7 @@ set the variables on the local session
 ## Step 5 (optional) : backup with monaco 
 
     cd;cd dynatrace-lab
-    mkdir backup
-    ./monaco download manifest.yaml -e MyEnv -o backup
+    ./monaco download manifest.yaml -e MyEnv -o Mybackup
     echo "end of step 5 - the full configuration has been backuped"
 
 ## Step 6 (optional) : redeploy specific management-zone configuration from backup json 
