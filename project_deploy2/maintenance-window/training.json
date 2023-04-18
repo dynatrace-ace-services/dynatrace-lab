@@ -1,10 +1,4 @@
 {
-  "metadata": {
-    "configurationVersions": [
-      0
-    ],
-    "clusterVersion": "1.238.121.20220406-200859"
-  },
   "name": "{{ .name }}",
   "description": "",
   "type": "PLANNED",
