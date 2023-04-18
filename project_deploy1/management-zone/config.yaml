@@ -1,5 +1,5 @@
 configs:
-- id: mz-1
+- id: Appname
   config:
     name:
       name: Appname
