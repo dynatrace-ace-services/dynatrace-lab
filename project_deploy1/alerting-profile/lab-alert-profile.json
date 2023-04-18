@@ -2,13 +2,6 @@
  "displayName": "{{ .name }}",
  "eventTypeFilters": [],
  "managementZoneId": "{{.mzId}}",
- "metadata": {
-  "clusterVersion": "1.215.107.20210414-181420",
-  "configurationVersions": [],
-  "currentConfigurationVersions": [
-   "0"
-  ]
- },
  "mzId": "{{.mzId}}",
  "rules": [
   {
