@@ -6,7 +6,7 @@ configs:
       type: environment
     parameters:
       applicationId:
-        configId: app-1
+        configId: Appname
         configType: application-web
         property: id
         type: reference
