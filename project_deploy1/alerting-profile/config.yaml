@@ -1,5 +1,5 @@
 configs:
-- id: profile-1
+- id: Appname
   config:
     name:
       name: Appname
