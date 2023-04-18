@@ -1,11 +1,5 @@
 {
  "description": null,
- "metadata": {
-  "clusterVersion": "1.215.107.20210414-181420",
-  "configurationVersions": [
-   7
-  ]
- },
  "name": "{{ .name }}",
  "rules": [
   {
