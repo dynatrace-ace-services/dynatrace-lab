@@ -1,5 +1,5 @@
 configs:
-- id: notification-1
+- id: Appname
   config:
     name:
       name: Appname
