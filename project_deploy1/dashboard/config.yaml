@@ -12,7 +12,7 @@ configs:
         name: Hostname
         type: environment
       mzid:
-        configId: mz-1
+        configId: Appname
         configType: management-zone
         property: id
         type: reference
