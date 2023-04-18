@@ -1,5 +1,5 @@
 configs:
-- id: detect-rule1
+- id: Appname
   config:
     name:
       name: Appname
