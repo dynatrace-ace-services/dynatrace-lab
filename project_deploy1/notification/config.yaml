@@ -6,7 +6,7 @@ configs:
       type: environment
     parameters:
       alertingprofileId:
-        configId: profile-1
+        configId: Appname
         configType: alerting-profile
         property: id
         type: reference
