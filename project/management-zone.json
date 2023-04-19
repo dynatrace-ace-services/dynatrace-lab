@@ -1,7 +1,6 @@
 {
- "description": " ", 
- "dimensionalRules": [],
- "name": "{{ .name }}",
+  "name": "{{ .name }}",
+  "description": " ",
   "rules": [
     {
       "enabled": true,
