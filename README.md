@@ -27,6 +27,7 @@ We will use the lab VM as a tooling host and not as an application host.
 
     cd
     git clone https://github.com/dynatrace-ace-services/dynatrace-lab
+    mv dynatrace-lab/project_configXX dynatrace-lab/project_config`hostname|tail -c3`
     echo "end of step 1 - the lab is copy here home/dynatrace-lab"
     
 
@@ -55,9 +56,7 @@ set the variables on the local session
 ## Step 4 : deploy with monaco 
 
     cd;cd dynatrace-lab
-    ./monaco deploy -c manifest.yaml -p project_deploy1
-    sleep 2
-    ./monaco deploy -c manifest.yaml -p project_deploy2
+    ./monaco deploy -c manifest.yaml -p project_deploy<XX> #Replace XX by your user number 00, 01 ...
     echo "end of step 4 - the configuration has been deployed on the tenant"
 
 ## Step 5 (optional) : backup with monaco 
@@ -76,7 +75,7 @@ download mz configuration
 modifiy config.yaml for mz
 
     cd backup-mz/project_MyEnv/management-zone
-    vim config.yaml
+    nano config.yaml
 
 keep only your id in this file (delete the ohers) and chnage the name like here : 
     
