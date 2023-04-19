@@ -1,5 +1,5 @@
 configs:
-- id: Appname
+- id: mw-1
   config:
     name:
       name: Appname
@@ -13,4 +13,6 @@ configs:
     template: training.json
     skip: false
   type:
-    api: maintenance-window
+    settings:
+      schema: builtin:alerting.maintenance-window
+      scope: environment:
