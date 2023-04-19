@@ -55,13 +55,13 @@ set the variables on the local session
 ## Step 4 : deploy with monaco 
 
     cd;cd dynatrace-lab
-    ./monaco deploy -c manifest.yaml -p project_config`hostname|tail -c3`
+    ./monaco deploy manifest.yaml
     echo "end of step 4 - the configuration has been deployed on the tenant"
 
 ## Step 5 (optional) : backup with monaco 
 
     cd;cd dynatrace-lab
-    ./monaco download manifest.yaml -e MyEnv -o Mybackup
+    ./monaco download manifest.yaml -e MyEnv
     echo "end of step 5 - the full configuration has been backuped"
 
 ## Step 6 (optional) : redeploy specific management-zone configuration from backup json 
@@ -94,5 +94,3 @@ On Dynatrace UI, verify that you have a new management zone : `My_easytravelXX`,
     echo "Go to the mz settings on the UI : "$DT_TENANT_URL"/ui/settings/builtin:management-zones"
     echo "end of step 6 - a new mz has been deployed on Dynatrace "
     
-    
-
