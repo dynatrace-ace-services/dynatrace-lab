@@ -12,8 +12,8 @@ do
         echo "2) export Appname="$Appname
         echo "3) export Hostname="$Hostname
         echo "4) export Email="$Email
-        echo "A) modify the config.yaml with id"=$config 
-        echo "Ctrl/c to quit"
+        echo "5) modify the config.yaml with id"=$config 
+        echo "A) Apply the configuration (Ctrl/c to quit)"
         echo ""
         sleep 0.2
         read  -p "Input Selection (0, 1, 2, 3, 4 or A ): " reponse
@@ -34,9 +34,10 @@ do
                 "4") read  -p "4) export Email=" value
                      sed -i s/Email=.*$/Email=\"$value\"/g ./lab_env.sh;. ./lab_env.sh
                 ;;
-                "A") APPLY="Y"
+                "5") config=config-`hostname|tail -c3`
                      sed -i "s/config-xx/config-`hostname|tail -c3`/g" project/config.yml
-                     config=config-`hostname|tail -c3`
+                ;;
+                "A") APPLY="Y"
                      . ./lab_env.sh
                 ;;
         esac
