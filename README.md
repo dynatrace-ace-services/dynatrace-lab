@@ -56,10 +56,7 @@ set the variables on the local session
 ## Step 4 : deploy with monaco 
 
     cd;cd dynatrace-lab
-    ./monaco deploy -c manifest.yaml -p project_deployXX 
-    
- =>> Replace XX by your user number 00, 01 ...
-    
+    ./monaco deploy -c manifest.yaml -p project_config`hostname|tail -c3`
     echo "end of step 4 - the configuration has been deployed on the tenant"
 
 ## Step 5 (optional) : backup with monaco 
