@@ -25,7 +25,9 @@ configs:
     template: application-detection-rule.json
     skip: false
   type:
-    api: app-detection-rule
+    settings:
+      schema: builtin:rum.web.app-detection
+      scope: environment
 - id: config-xx
   config:
     name:
