@@ -12,7 +12,7 @@ do
         echo "2) export Appname="$Appname
         echo "3) export Hostname="$Hostname
         echo "4) export Email="$Email
-        echo "5) create a unique id in project/config.yaml" => -id: $config 
+        echo "5) project/config.yaml, create a unique -id: "$config 
         echo "A) Apply the configuration (Ctrl/c to quit)"
         echo ""
         sleep 0.2
