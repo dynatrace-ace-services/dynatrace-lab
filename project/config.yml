@@ -126,7 +126,7 @@ configs:
 - id: host-naming
   config:
     name: host-naming
-    template: conditional-naming-hos.json
+    template: conditional-naming-host.json
     skip: false
   type:
     api: conditional-naming-host
