@@ -1,7 +1,7 @@
 {
   "enabled": false,
   "type": "EMAIL",
-  "displayName": "{{ .Appname }}",
+  "displayName": "{{ .name }}",
   "emailNotification": {
     "recipients": [
       "{{ .Email }}"
