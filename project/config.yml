@@ -40,7 +40,9 @@ configs:
     template: alerting-profile.json
     skip: false
   type:
-    api: alerting-profile
+    settings:
+      schema: builtin:alerting.profile
+      scope: environment
 - id: config-xx
   config:
     name:
