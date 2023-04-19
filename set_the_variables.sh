@@ -1,5 +1,6 @@
 #!/bin/bash
 . ./lab_env.sh
+config=config-xx
 
 while [ "$APPLY" !=  "Y" ]
 do
@@ -11,7 +12,8 @@ do
         echo "2) export Appname="$Appname
         echo "3) export Hostname="$Hostname
         echo "4) export Email="$Email
-        echo "A) apply the variables (Ctrl/c to quit) "
+        echo "A) modify the config.yaml with id"=$config 
+        echo "Ctrl/c to quit"
         echo ""
         sleep 0.2
         read  -p "Input Selection (0, 1, 2, 3, 4 or A ): " reponse
@@ -34,6 +36,7 @@ do
                 ;;
                 "A") APPLY="Y"
                      sed -i "s/config-xx/config-`hostname|tail -c3`/g" project/config.yml
+                     config=config-`hostname|tail -c3`
                      . ./lab_env.sh
                 ;;
         esac
