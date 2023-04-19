@@ -32,7 +32,7 @@ configs:
       name: Appname
       type: environment
     parameters:
-      mzId:
+      mzid:
         configId: config-xx
         configType: builtin:management-zones
         property: id
