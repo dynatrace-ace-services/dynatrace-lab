@@ -34,7 +34,7 @@ configs:
     parameters:
       mzId:
         configId: config-xx
-        configType: management-zone
+        configType: builtin:management-zones
         property: id
         type: reference
     template: alerting-profile.json
@@ -78,7 +78,7 @@ configs:
     parameters:
       mzid:
         configId: config-xx
-        configType: management-zone
+        configType: builtin:management-zones
         property: id
         type: reference
     template: maintenance-window.json
@@ -101,7 +101,7 @@ configs:
         type: environment
       mzid:
         configId: config-xx
-        configType: management-zone
+        configType: builtin:management-zones
         property: id
         type: reference
       owner:
