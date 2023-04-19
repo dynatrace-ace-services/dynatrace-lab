@@ -126,28 +126,28 @@ configs:
 - id: host-naming
   config:
     name: host-naming
-    template: host-naming.json
+    template: conditional-naming-hos.json
     skip: false
   type:
     api: conditional-naming-host
 - id: processgroup-naming
   config:
     name: processgroup-naming
-    template: processgroup-naming.json
+    template: conditional-naming-processgroup.json
     skip: false
   type:
     api: conditional-naming-processgroup
 - id: service-naming-nginx
   config:
     name: service-naming-nginx
-    template: service-naming-nginx.json
+    template: conditional-naming-service-nginx.json
     skip: false
   type:
     api: conditional-naming-service
 - id: service-naming
   config:
     name: service-naming
-    template: service-naming.json
+    template: conditional-naming-service.json
     skip: false
   type:
     api: conditional-naming-service
