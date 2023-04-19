@@ -1,0 +1,15 @@
+configs:
+- id: tag-1
+  config:
+    name: env
+    template: env.json
+    skip: false
+  type:
+    api: auto-tag
+- id: tag-2
+  config:
+    name: app
+    template: app.json
+    skip: false
+  type:
+    api: auto-tag
