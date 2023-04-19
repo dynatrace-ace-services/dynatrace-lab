@@ -1,63 +1,37 @@
 {
- "displayName": "{{ .name }}",
- "eventTypeFilters": [],
- "managementZoneId": "{{.mzId}}",
- "metadata": {
-  "clusterVersion": "1.215.107.20210414-181420",
-  "configurationVersions": [],
-  "currentConfigurationVersions": [
-   "0"
-  ]
- },
- "mzId": "{{.mzId}}",
- "rules": [
-  {
-   "delayInMinutes": 0,
-   "severityLevel": "AVAILABILITY",
-   "tagFilter": {
-    "includeMode": "NONE",
-    "tagFilters": []
-   }
-  },
-  {
-   "delayInMinutes": 0,
-   "severityLevel": "ERROR",
-   "tagFilter": {
-    "includeMode": "NONE",
-    "tagFilters": []
-   }
-  },
-  {
-   "delayInMinutes": 0,
-   "severityLevel": "PERFORMANCE",
-   "tagFilter": {
-    "includeMode": "NONE",
-    "tagFilters": []
-   }
-  },
-  {
-   "delayInMinutes": 0,
-   "severityLevel": "RESOURCE_CONTENTION",
-   "tagFilter": {
-    "includeMode": "NONE",
-    "tagFilters": []
-   }
-  },
-  {
-   "delayInMinutes": 0,
-   "severityLevel": "MONITORING_UNAVAILABLE",
-   "tagFilter": {
-    "includeMode": "NONE",
-    "tagFilters": []
-   }
-  },
-  {
-   "delayInMinutes": 0,
-   "severityLevel": "CUSTOM_ALERT",
-   "tagFilter": {
-    "includeMode": "NONE",
-    "tagFilters": []
-   }
-  }
- ]
+  "name": "{{ .name }}",
+"managementZone": "{{ .mzid }}",
+  "severityRules": [
+    {
+      "severityLevel": "AVAILABILITY",
+      "delayInMinutes": 0,
+      "tagFilterIncludeMode": "NONE"
+    },
+    {
+      "severityLevel": "ERRORS",
+      "delayInMinutes": 0,
+      "tagFilterIncludeMode": "NONE"
+    },
+    {
+      "severityLevel": "PERFORMANCE",
+      "delayInMinutes": 0,
+      "tagFilterIncludeMode": "NONE"
+    },
+    {
+      "severityLevel": "RESOURCE_CONTENTION",
+      "delayInMinutes": 0,
+      "tagFilterIncludeMode": "NONE"
+    },
+    {
+      "severityLevel": "MONITORING_UNAVAILABLE",
+      "delayInMinutes": 0,
+      "tagFilterIncludeMode": "NONE"
+    },
+    {
+      "severityLevel": "CUSTOM_ALERT",
+      "delayInMinutes": 0,
+      "tagFilterIncludeMode": "NONE"
+    }
+  ],
+  "eventFilters": []
 }
