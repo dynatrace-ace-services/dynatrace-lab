@@ -1,9 +1,5 @@
 {
- "name": "{{ .name }}",
- "applicationIdentifier": "{{.applicationId}}",
- "filterConfig": {
-  "applicationMatchTarget": "DOMAIN",
-  "applicationMatchType": "MATCHES",
-  "pattern": "{{.pattern}}-www"
- }
+  "matcher": "DOMAIN_MATCHES",
+  "pattern": "{{ .pattern }}-www",
+  "applicationId": "{{ .applicationId}}"
 }
