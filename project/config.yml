@@ -19,9 +19,6 @@ configs:
         configType: application-web
         property: id
         type: reference
-      pattern:
-        name: Appname
-        type: environment
     template: application-detection-rule.json
     skip: false
   type:
