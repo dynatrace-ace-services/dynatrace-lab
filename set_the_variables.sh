@@ -33,6 +33,7 @@ do
                      sed -i s/Email=.*$/Email=\"$value\"/g ./lab_env.sh;. ./lab_env.sh
                 ;;
                 "A") APPLY="Y"
+                     sed -i "s/config-xx/config-`hostname|tail -c3`/g" project/config.yml
                      . ./lab_env.sh
                 ;;
         esac
