@@ -12,7 +12,7 @@ do
         echo "2) export Appname="$Appname
         echo "3) export Hostname="$Hostname
         echo "4) export Email="$Email
-        echo "5) create a unique id in project/config.yaml"=$config 
+        echo "5) create a unique id in project/config.yaml" => -id: $config 
         echo "A) Apply the configuration (Ctrl/c to quit)"
         echo ""
         sleep 0.2
@@ -38,7 +38,6 @@ do
                      sed -i "s/config-xx/config-`hostname|tail -c3`/g" project/config.yml
                 ;;
                 "A") APPLY="Y"
-                      sed -i "s/config-xx/config-`hostname|tail -c3`/g" project/config.yml
                      . ./lab_env.sh
                 ;;
         esac
