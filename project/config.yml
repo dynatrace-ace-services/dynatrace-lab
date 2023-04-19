@@ -71,7 +71,9 @@ configs:
     template: notification.json
     skip: false
   type:
-    api: notification
+    settings:
+      schema: builtin:problem.notifications
+      scope: environment
 - id: config-xx
   config:
     name:
