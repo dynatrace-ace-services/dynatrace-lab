@@ -23,7 +23,8 @@ We will use the lab VM as a tooling host and not as an application host.
     Monaco can be installed anywhere, on your desktop : linux, windows, or on a tooling k8s, but never on an application host ! 
     (except during this training)
 
-## Step 1 : clone this git and create the project_config<xx> (xx = user number)
+## Step 1 : clone this git  
+and create the project_config<xx> (xx = user number)
 
     cd
     git clone https://github.com/dynatrace-ace-services/dynatrace-lab
