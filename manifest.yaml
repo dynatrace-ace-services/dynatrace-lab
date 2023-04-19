@@ -2,8 +2,19 @@
 manifestVersion: "1.0"
 
 projects:
-- name: project_deploy1
-- name: project_deploy2
+- name: project_config00
+- name: project_config01
+- name: project_config02
+- name: project_config03
+- name: project_config04
+- name: project_config05
+- name: project_config06
+- name: project_config07
+- name: project_config08
+- name: project_config09
+- name: project_config10
+- name: project_config11
+- name: project_config12
 
 environmentGroups:
 - name: default

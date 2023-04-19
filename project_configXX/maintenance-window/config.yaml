@@ -1,0 +1,18 @@
+configs:
+- id: mw-1
+  config:
+    name:
+      name: Appname    
+      type: environment
+    parameters:
+      mzid:
+        configId: mz-1
+        configType: management-zone
+        property: id
+        type: reference
+    template: mw.json
+    skip: false
+  type:
+    settings:
+      schema: builtin:alerting.maintenance-window
+      scope: environment
