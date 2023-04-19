@@ -1,13 +1,16 @@
 {
- "active": false,
- "alertingProfile": "{{.alertingprofileId}}",
- "bccReceivers": [],
- "body": "{ProblemDetailsHTML}",
- "ccReceivers": [],
- "name": "{{ .name }}",
- "receivers": [
-  "{{.email}}"
- ],
- "subject": "{State} Problem {ProblemID}: {ImpactedEntity}",
- "type": "EMAIL"
+  "enabled": false,
+  "type": "EMAIL",
+  "displayName": "{{ .Appname }}",
+  "emailNotification": {
+    "recipients": [
+      "{{ .Email }}"
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "subject": "{State} Problem {ProblemID}: {ImpactedEntity}",
+    "notifyClosedProblems": true,
+    "body": "{ProblemDetailsHTML}"
+  },
+  "alertingProfile": "{{ .alertingprofileId }}"
 }
