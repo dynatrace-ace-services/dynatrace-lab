@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "generalProperties": {
-    "name": {{ .name }},
+    "name": "{{ .name }}",
     "maintenanceType": "PLANNED",
     "suppression": "DETECT_PROBLEMS_DONT_ALERT",
     "disableSyntheticMonitorExecution": false
