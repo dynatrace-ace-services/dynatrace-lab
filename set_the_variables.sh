@@ -12,11 +12,11 @@ do
         echo "2) export Appname="$Appname
         echo "3) export Hostname="$Hostname
         echo "4) export Email="$Email
-        echo "5) modify the config.yaml with id"=$config 
+        echo "5) create a unique id in project/config.yaml"=$config 
         echo "A) Apply the configuration (Ctrl/c to quit)"
         echo ""
         sleep 0.2
-        read  -p "Input Selection (0, 1, 2, 3, 4 or A ): " reponse
+        read  -p "Input Selection (0, 1, 2, 3, 4, 5 or A ): " reponse
 
         case "$reponse" in
                 "0") read  -p "0) export DT_TENANT_URL=https://" value
@@ -38,6 +38,7 @@ do
                      sed -i "s/config-xx/config-`hostname|tail -c3`/g" project/config.yml
                 ;;
                 "A") APPLY="Y"
+                      sed -i "s/config-xx/config-`hostname|tail -c3`/g" project/config.yml
                      . ./lab_env.sh
                 ;;
         esac
