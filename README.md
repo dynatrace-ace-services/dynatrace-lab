@@ -24,12 +24,9 @@ We will use the lab VM as a tooling host and not as an application host.
     (except during this training)
 
 ## Step 1 : clone this git  
-and create the project_config<xx> (xx = user number)
 
     cd
     git clone https://github.com/dynatrace-ace-services/dynatrace-lab
-    mv dynatrace-lab/project_config dynatrace-lab/project_config`hostname|tail -c3`
-    sed -i "s/_config/_config`hostname|tail -c3`/g" dynatrace-lab/manifest.yaml
     echo "end of step 1 - the lab is copy here home/dynatrace-lab"
     
 
