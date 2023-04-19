@@ -62,7 +62,7 @@ configs:
     parameters:
       alertingprofileId:
         configId: config-xx
-        configType: alerting-profile
+        configType: builtin:alerting.profile
         property: id
         type: reference
       email:
