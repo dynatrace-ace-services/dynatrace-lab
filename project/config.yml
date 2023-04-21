@@ -1,7 +1,7 @@
 configs:
 #application web
 #enable
-- id: config-xx
+- id: config-id
   config:
     name:
       name: Appname
@@ -12,14 +12,14 @@ configs:
     api: application-web
 #application detection rule for domain easytravelxx-www (loadgen) and attached to the application web
 #enable
-- id: config-xx
+- id: config-id
   config:
     name:
       name: Appname
       type: environment
     parameters:
       applicationId:
-        configId: config-xx
+        configId: config-id
         configType: application-web
         property: id
         type: reference
@@ -31,7 +31,7 @@ configs:
       scope: environment
 #application detection rule for domain azure (real activity) and attached to the application web
 #disbale
-- id: config-xx
+- id: config-id
   config:
     name:
       name: Appname
@@ -41,7 +41,7 @@ configs:
       type: environment
     parameters:
       applicationId:
-        configId: config-xx
+        configId: config-id
         configType: application-web
         property: id
         type: reference
@@ -53,14 +53,14 @@ configs:
       scope: environment
 #alerting profile based on management zone
 #enable
-- id: config-xx
+- id: config-id
   config:
     name:
       name: Appname
       type: environment
     parameters:
       mzid:
-        configId: config-xx
+        configId: config-id
         configType: builtin:management-zones
         property: id
         type: reference
@@ -72,7 +72,7 @@ configs:
       scope: environment
 #management zone (used by alerting profile, dashboard and maintenance window) 
 #enable
-- id: config-xx
+- id: config-id
   config:
     name:
       name: Appname
@@ -85,14 +85,14 @@ configs:
       scope: environment
 #problem notification based on alerting profile and need "Email" parameter 
 #enable
-- id: config-xx
+- id: config-id
   config:
     name:
       name: Appname
       type: environment
     parameters:
       alertingprofileId:
-        configId: config-xx
+        configId: config-id
         configType: builtin:alerting.profile
         property: id
         type: reference
@@ -107,14 +107,14 @@ configs:
       scope: environment
 #maintenance window based on management zone (disable notification on not business hours) 
 #enable
-- id: config-xx
+- id: config-id
   config:
     name:
       name: Appname    
       type: environment
     parameters:
       mzid:
-        configId: config-xx
+        configId: config-id
         configType: builtin:management-zones
         property: id
         type: reference
@@ -126,7 +126,7 @@ configs:
       scope: environment
 #special dashboard based on management zone and associated to Email user 
 #enable
-- id: config-xx
+- id: config-id
   config:
     name:
       name: Appname
@@ -139,7 +139,7 @@ configs:
         name: Hostname
         type: environment
       mzid:
-        configId: config-xx
+        configId: config-id
         configType: builtin:management-zones
         property: id
         type: reference
@@ -206,5 +206,3 @@ configs:
     skip: false
   type:
     api: conditional-naming-service
-
-    
