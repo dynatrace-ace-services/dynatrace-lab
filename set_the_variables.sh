@@ -1,6 +1,6 @@
 #!/bin/bash
 . ./lab_env.sh
-config=`sed -n 2p project/config.yml | cut -d ' ' -f 3`
+config=config-id
 
 while [ "$APPLY" !=  "Y" ]
 do
@@ -34,8 +34,8 @@ do
                 "4") read  -p "4) export Email=" value
                      sed -i s/Email=.*$/Email=\"$value\"/g ./lab_env.sh;. ./lab_env.sh
                 ;;
-                "5") config=config-`hostname|tail -c3`
-                     sed -i "s/config-xx/config-`hostname|tail -c3`/g" project/config.yml
+                "5") config=`uuidgen`
+                     sed -i "s/config-id/$config/g" project/config.yml
                 ;;
                 "A") APPLY="Y"
                      . ./lab_env.sh
