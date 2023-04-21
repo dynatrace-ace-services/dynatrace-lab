@@ -1,6 +1,6 @@
 configs:
-#application web
-#enable
+# config for specific id
+## application web
 - id: config-id
   config:
     name:
@@ -10,8 +10,7 @@ configs:
     skip: false
   type:
     api: application-web
-#application detection rule for domain easytravelxx-www (loadgen) and attached to the application web
-#enable
+## application detection rule for domain easytravelxx-www (loadgen) and attached to the application web
 - id: config-id
   config:
     name:
@@ -29,8 +28,8 @@ configs:
     settings:
       schema: builtin:rum.web.app-detection
       scope: environment
-#application detection rule for domain azure (real activity) and attached to the application web
-#disbale
+## application detection rule for domain azure (real activity) and attached to the application web
+## disable for admin training
 - id: config-id
   config:
     name:
@@ -46,13 +45,12 @@ configs:
         property: id
         type: reference
     template: application-detection-rule-azure.json
-    skip: true
+    skip: Fullconfig
   type:
     settings:
       schema: builtin:rum.web.app-detection
       scope: environment
-#alerting profile based on management zone
-#enable
+## alerting profile based on management zone
 - id: config-id
   config:
     name:
@@ -70,8 +68,7 @@ configs:
     settings:
       schema: builtin:alerting.profile
       scope: environment
-#management zone (used by alerting profile, dashboard and maintenance window) 
-#enable
+## management zone (used by alerting profile, dashboard and maintenance window) 
 - id: config-id
   config:
     name:
@@ -83,8 +80,7 @@ configs:
     settings:
       schema: builtin:management-zones
       scope: environment
-#problem notification based on alerting profile and need "Email" parameter 
-#enable
+## problem notification based on alerting profile and need "Email" parameter 
 - id: config-id
   config:
     name:
@@ -105,8 +101,7 @@ configs:
     settings:
       schema: builtin:problem.notifications
       scope: environment
-#maintenance window based on management zone (disable notification on not business hours) 
-#enable
+## maintenance window based on management zone (disable notification on not business hours) 
 - id: config-id
   config:
     name:
@@ -124,8 +119,7 @@ configs:
     settings:
       schema: builtin:alerting.maintenance-window
       scope: environment
-#special dashboard based on management zone and associated to Email user 
-#enable
+## special dashboard based on management zone and associated to Email user 
 - id: config-id
   config:
     name:
@@ -150,8 +144,9 @@ configs:
     skip: false
   type:
     api: dashboard
-#auto tag "app" 
-#enable
+
+# generic config
+## auto tag "app" 
 - id: tag-env
   config:
     name: env
@@ -161,8 +156,7 @@ configs:
     settings:
       schema: builtin:tags.auto-tagging
       scope: environment
-#auto tag "env" 
-#enable
+## auto tag "env"
 - id: tag-app
   config:
     name: app
@@ -172,8 +166,7 @@ configs:
     settings:
       schema: builtin:tags.auto-tagging
       scope: environment
-#renaming host 
-#enable
+## renaming host 
 - id: host-naming
   config:
     name: host-naming
@@ -181,8 +174,7 @@ configs:
     skip: false
   type:
     api: conditional-naming-host
-#renaming process group 
-#enable
+## renaming process group 
 - id: processgroup-naming
   config:
     name: processgroup-naming
@@ -190,8 +182,7 @@ configs:
     skip: false
   type:
     api: conditional-naming-processgroup
-#renaming service 
-#enable
+## renaming service 
 - id: service-naming-nginx
   config:
     name: service-naming-nginx
