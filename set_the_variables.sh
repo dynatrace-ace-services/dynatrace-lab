@@ -42,4 +42,4 @@ do
                 ;;
         esac
 done
-echo "Variables have been configured in the env file: lab_env.sh"
+echo "to apply the variables run:   . lab_env.sh"
