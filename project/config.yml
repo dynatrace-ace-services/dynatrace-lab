@@ -35,15 +35,15 @@ configs:
     name:
       name: Appname
       type: environment
-    pattern:
-      name: Hostname
-      type: environment
     parameters:
       applicationId:
         configId: config-id
         configType: application-web
         property: id
         type: reference
+      pattern:
+        name: Hostname
+        type: environment
     template: application-detection-rule-azure.json
     skip: Fullconfig
   type:
