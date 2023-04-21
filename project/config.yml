@@ -35,7 +35,7 @@ configs:
     name:
       name: Appname
       type: environment
-    domaine:
+    pattern:
       name: Hostname
       type: environment
     parameters:
