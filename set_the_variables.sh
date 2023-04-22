@@ -46,5 +46,6 @@ do
                 ;;
         esac
 done
-echo "run local variables:   . lab_env.sh"
-echo "run monaco v2:         ./monaco deploy manifest.yaml"
+echo "Let's start deployment: "
+echo " 1. run local variables:   . lab_env.sh"
+echo " 2. run monaco v2:         ./monaco deploy manifest.yaml"
