@@ -38,10 +38,6 @@ do
                       config=`uuidgen`
                       sed -i "s/config-id/$config/g" project/config.yml
                       sed -i "s/config-id/$config/g" ./env.sh;. ./env.sh
-                     else
-                      config="ae03e676-b211-4534-9998-76ac180eacf3"
-                      sed -i "s/config-id/$config/g" project/config.yml
-                      sed -i "s/config-id/$config/g" ./env.sh;. ./env.sh
                      fi
                      
                 ;;
