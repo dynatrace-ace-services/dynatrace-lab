@@ -53,7 +53,7 @@
         },
         "description": "easytravel01-httpmonitor",
         "method": "GET",
-        "url": "http://{{ .DomainName ]}}",
+        "url": "http://{{ .domain ]}}",
         "validation": {
           "rules": [
             {
