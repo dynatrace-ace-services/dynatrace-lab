@@ -41,7 +41,7 @@ configs:
         configType: application-web
         property: id
         type: reference
-      pattern:
+      domain:
         name: DomainName
         type: environment
     template: application-detection-rule-azure.json
