@@ -42,7 +42,7 @@ configs:
         property: id
         type: reference
       pattern:
-        name: DonainName
+        name: DomainName
         type: environment
     template: application-detection-rule-azure.json
     skip: true
@@ -162,7 +162,7 @@ configs:
         name: HostGroup
         type: environment
       domain:
-        name: DonainName
+        name: DomainName
         type: environment
       mzid:
         configId: config-id
