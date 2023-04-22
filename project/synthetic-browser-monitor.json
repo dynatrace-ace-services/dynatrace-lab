@@ -97,7 +97,7 @@
   "manuallyAssignedApps": [
   "{{ .applicationId }}"
   ],
-  "name": "{{.name}} - click path",
+  "name": "{{.name}}-clickpath",
   "script": {
     "configuration": {
       "chromiumStartupFlags": {
