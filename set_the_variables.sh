@@ -46,5 +46,5 @@ do
                 ;;
         esac
 done
-echo "to apply the variables run:   . lab_env.sh"
-echo "and deploy monaco :           ./monaco deploy manifest.haml"
+echo "run local variables:   . lab_env.sh"
+echo "run monaco v2:         ./monaco deploy manifest.haml"
