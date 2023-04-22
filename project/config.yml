@@ -131,7 +131,9 @@ configs:
 ## disable for admin training
 - id: config-id-2
   config:
-    name: HostGroup
+    name: 
+      name: HostGroup
+      type: environment
     parameters:
       applicationId:
         configId: config-id
