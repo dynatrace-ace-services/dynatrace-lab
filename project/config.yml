@@ -114,7 +114,7 @@ configs:
         configType: application-web
         property: id
         type: reference
-    template: http-monitor.json
+    template: synthetic-http-monitor.json
     skip: false
   type:
     api: synthetic-monitor
@@ -135,7 +135,7 @@ configs:
       site2:
         name: PublicSyntheticLocation2
         type: environment
-    template: browser-monitor.json
+    template: synthetic-browser-monitor.json
     skip: false
   type:
     api: synthetic-monitor
