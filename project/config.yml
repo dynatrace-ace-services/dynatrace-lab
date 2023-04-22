@@ -176,7 +176,7 @@ configs:
       name: HostGroup
       type: environment
     parameters:
-      HostGroup:
+      hostgroup:
         name: HostGroup
         type: environment
       domain:
