@@ -17,7 +17,7 @@
       "retryOnError": true
     }
   },
-  "automaticallyAssignedApps": [],
+  "automaticallyAssignedApps": ["{{ .applicationId }}"],
   "createdFrom": "API",
   "enabled": false,
   "events": [
@@ -92,9 +92,7 @@
     "{{ .site2 }}"
   ],
   "managementZones": [],
-  "manuallyAssignedApps": [
-  "{{ .applicationId }}"
-  ],
+  "manuallyAssignedApps": [],
   "name": "{{.name}}",
   "script": {
     "configuration": {
