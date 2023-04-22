@@ -21,9 +21,7 @@
       }
     }
   },
-  "automaticallyAssignedApps": [
-    "{{ .applicationId }}"
-  ],
+  "automaticallyAssignedApps": [],
   "createdFrom": "API",
   "enabled": false,
   "frequencyMin": 5,
