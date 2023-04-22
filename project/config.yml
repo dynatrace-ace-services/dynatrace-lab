@@ -114,6 +114,9 @@ configs:
         configType: application-web
         property: id
         type: reference
+      domain:
+        name: DomainName
+        type: environment
       site1:     
         name: PublicSyntheticLocation1
         type: environment
@@ -135,6 +138,9 @@ configs:
         configType: application-web
         property: id
         type: reference
+      domain:
+        name: DomainName
+        type: environment
       site1:
         name: PublicSyntheticLocation1
         type: environment
