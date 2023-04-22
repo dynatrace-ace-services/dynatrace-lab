@@ -1,5 +1,5 @@
 {
   "matcher": "DOMAIN_MATCHES",
-  "pattern": "{{ .name }}-www",
-  "applicationId": "{{ .applicationId}}"
+  "pattern": "{{ .name }}",
+  "applicationId": "{{ .applicationId }}"
 }
