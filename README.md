@@ -16,6 +16,10 @@ We will use the lab VM as a tooling host and not as an application host.
     processgroup-naming
     sevice-naming
     dashboard
+    
+    Disable for this training
+    #synthetic http monitor
+    #synthetic browser monitor
 
 
 ## Step 0 : a tool host for monaco 
