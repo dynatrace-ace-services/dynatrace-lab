@@ -21,7 +21,7 @@
     "{{ .applicationId }}"
   ],
   "createdFrom": "API",
-  "enabled": true,
+  "enabled": false,
   "events": [
     {
       "name": "Loading of page easytravel angular home",
