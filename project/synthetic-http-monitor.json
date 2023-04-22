@@ -32,8 +32,10 @@
     "{{ .site2 }}"
   ],
   "managementZones": [],
-  "manuallyAssignedApps": [],
-  "name": "{{.name}}",
+  "manuallyAssignedApps": [
+  "{{ .applicationId }}"
+  ],
+  "name": "{{.name}} - http monitor",
   "requests": [
     {
       "entityId": "HTTP_CHECK_STEP-A1F9FB2089E9043A",
@@ -51,7 +53,7 @@
         },
         "description": "easytravel01-httpmonitor",
         "method": "GET",
-        "url": "http://dynatracemonaco201.westeurope.cloudapp.azure.com",
+        "url": "http://{{ .DomainName ]}}",
         "validation": {
           "rules": [
             {
