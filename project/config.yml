@@ -115,6 +115,9 @@ configs:
       type: compound
       references:
         - hostgroug
+      hostgroup:
+        type: environment
+        name: HostGroup
     parameters:
       hostgroup:
         type: environment
@@ -146,6 +149,9 @@ configs:
       type: compound
       references:
         - hostgroup
+      hostgroup:
+        type: environment
+        name: HostGroup
     parameters:
       hostgroup:
         type: environment
