@@ -4,7 +4,7 @@ configs:
 - id: config-id
   config:
     name:
-      name: Appname
+      name: HostGroup
       type: environment
     template: application-web.json
     skip: false
@@ -14,7 +14,7 @@ configs:
 - id: config-id
   config:
     name:
-      name: Appname
+      name: HostGroup
       type: environment
     parameters:
       applicationId:
@@ -33,7 +33,7 @@ configs:
 - id: config-id-2
   config:
     name:
-      name: Appname
+      name: HostGroup
       type: environment
     parameters:
       applicationId:
@@ -42,7 +42,7 @@ configs:
         property: id
         type: reference
       pattern:
-        name: Hostname
+        name: DonainName
         type: environment
     template: application-detection-rule-azure.json
     skip: true
@@ -54,7 +54,7 @@ configs:
 - id: config-id
   config:
     name:
-      name: Appname
+      name: HostGroup
       type: environment
     parameters:
       mzid:
@@ -72,7 +72,7 @@ configs:
 - id: config-id
   config:
     name:
-      name: Appname
+      name: HostGroup
       type: environment
     template: management-zone.json
     skip: false
@@ -84,7 +84,7 @@ configs:
 - id: config-id
   config:
     name:
-      name: Appname
+      name: HostGroup
       type: environment
     parameters:
       alertingprofileId:
@@ -101,11 +101,44 @@ configs:
     settings:
       schema: builtin:problem.notifications
       scope: environment
+configs:
+## http monitor
+## disable for admin training
+- id: config-id
+  config:
+    name:     
+      name: HostGroup
+      type: environment
+    parameters:
+      applicationId:
+        configId: config-id
+        configType: application-web
+        property: id
+        type: reference
+    template: http-monitor.json
+    skip: false
+  type:
+    api: synthetic-monitor
+## browser monitor
+## disable for admin training
+- id: config-id-2
+  config:
+    name: HostGroup
+    parameters:
+      applicationId:
+        configId: config-id
+        configType: application-web
+        property: id
+        type: reference
+    template: browser-monitor.json
+    skip: false
+  type:
+    api: synthetic-monitor
 ## maintenance window based on management zone (disable notification on not business hours) 
 - id: config-id
   config:
     name:
-      name: Appname    
+      name: HostGroup    
       type: environment
     parameters:
       mzid:
@@ -123,14 +156,14 @@ configs:
 - id: config-id
   config:
     name:
-      name: Appname
+      name: HostGroup
       type: environment
     parameters:
-      appname:
-        name: Appname
+      HostGroup:
+        name: HostGroup
         type: environment
       domain:
-        name: Hostname
+        name: DonainName
         type: environment
       mzid:
         configId: config-id
