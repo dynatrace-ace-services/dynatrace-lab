@@ -34,7 +34,7 @@ do
                 "4") read  -p "4) export Email=" value
                      sed -i s/Email=.*$/Email=\"$value\"/g ./lab_env.sh;. ./lab_env.sh
                 ;;
-                "5") if [[ $config == "id" ]];then
+                "5") if [[ $config == "config-id" ]];then
                       config=`uuidgen`
                       sed -i "s/config-id/$config/g" project/config.yml
                       sed -i "s/config-id/$config/g" ./lab_env.sh;. ./lab_env.sh
