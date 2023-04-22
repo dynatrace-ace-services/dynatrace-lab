@@ -21,7 +21,7 @@
       }
     }
   },
-  "automaticallyAssignedApps": [],
+  "automaticallyAssignedApps": ["{{ .applicationId }}"],
   "createdFrom": "API",
   "enabled": false,
   "frequencyMin": 5,
@@ -30,9 +30,7 @@
     "{{ .site2 }}"
   ],
   "managementZones": [],
-  "manuallyAssignedApps": [
-  "{{ .applicationId }}"
-  ],
+  "manuallyAssignedApps": [],
   "name": "{{.name}}",
   "requests": [
     {
