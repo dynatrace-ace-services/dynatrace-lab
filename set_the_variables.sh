@@ -10,7 +10,7 @@ do
         echo "0) export DT_TENANT_URL="$DT_TENANT_URL
         echo "1) export DT_API_TOKEN="$DT_API_TOKEN
         echo "2) export HostGroup="$HostGroup
-        echo "3) export DomainName="$DonainName
+        echo "3) export DomainName="$DomainName
         echo "4) export Email="$Email
         echo "5) project/config.yaml, need a unique id: "$config 
         echo "A) Apply the configuration (Ctrl/c to quit)"
