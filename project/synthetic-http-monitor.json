@@ -33,7 +33,7 @@
   "manuallyAssignedApps": [
   "{{ .applicationId }}"
   ],
-  "name": "{{.name}} - http monitor",
+  "name": "{{.name}}",
   "requests": [
     {
       "name": "request1",
