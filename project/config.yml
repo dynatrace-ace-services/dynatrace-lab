@@ -45,7 +45,7 @@ configs:
         name: Hostname
         type: environment
     template: application-detection-rule-azure.json
-    skip: Fullconfig
+    skip: true
   type:
     settings:
       schema: builtin:rum.web.app-detection
