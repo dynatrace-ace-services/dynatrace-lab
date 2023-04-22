@@ -18,6 +18,9 @@ configs:
       type: compound
       references:
         - hostgroup
+      hostgroup:
+        type: environment
+        name: HostGroup
     parameters:
       hostgroup:
         type: environment
