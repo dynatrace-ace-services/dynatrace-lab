@@ -28,8 +28,8 @@ do
                 "2") read  -p "2) export HostGroup=" value
                      sed -i s/HostGroup=.*$/HostGroup=\"$value\"/g ./env.sh;. ./env.sh
                 ;;
-                "3") read  -p "3) export DonainName=" value
-                     sed -i s/DonainName=.*$/DonainName=\"$value\"/g ./env.sh;. ./env.sh
+                "3") read  -p "3) export DomainName=" value
+                     sed -i s/DomainName=.*$/DomainName=\"$value\"/g ./env.sh;. ./env.sh
                 ;;
                 "4") read  -p "4) export Email=" value
                      sed -i s/Email=.*$/Email=\"$value\"/g ./env.sh;. ./env.sh
