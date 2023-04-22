@@ -114,6 +114,12 @@ configs:
         configType: application-web
         property: id
         type: reference
+      site1:     
+        name: PublicSyntheticLocation1
+        type: environment
+      site2:
+        name: PublicSyntheticLocation2
+        type: environment
     template: synthetic-http-monitor.json
     skip: false
   type:
