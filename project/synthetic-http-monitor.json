@@ -25,7 +25,7 @@
     "{{ .applicationId }}"
   ],
   "createdFrom": "API",
-  "enabled": true,
+  "enabled": false,
   "frequencyMin": 5,
   "locations": [
     "{{ .site1 }}",
@@ -35,7 +35,7 @@
   "manuallyAssignedApps": [
   "{{ .applicationId }}"
   ],
-  "name": "{{.name}}-httpmonitor",
+  "name": "{{.name}}",
   "requests": [
     {
       "name": "request1",
