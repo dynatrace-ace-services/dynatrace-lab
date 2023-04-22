@@ -1,6 +1,6 @@
 #!/bin/bash
 . ./lab_env.sh
-config=`cat project/config.yml | grep -om1 config-id`
+config=`cat project/config.yml | grep -m1  "\- id:"|cut -d " " -f  3`
 
 while [ "$APPLY" !=  "Y" ]
 do
