@@ -14,8 +14,13 @@ configs:
 - id: config-id
   config:
     name:
-      name: HostGroup
-      type: environment
+      format: "{{ .hostgroup }}-www"
+      type: compound
+      references:
+        - hostgroup
+      hostgroup:
+        type: environment
+        name: HostGroup
     parameters:
       applicationId:
         configId: config-id
@@ -105,9 +110,14 @@ configs:
 ## disable for admin training
 - id: config-id
   config:
-    name:     
-      name: HostGroup
-      type: environment
+    name:
+      format: "{{ .hostgroup }} - http monitor"
+      type: compound
+      references:
+        - hostgroup
+      hostgroup:
+        type: environment
+        name: HostGroup
     parameters:
       applicationId:
         configId: config-id
@@ -132,8 +142,13 @@ configs:
 - id: config-id-2
   config:
     name: 
-      name: HostGroup
-      type: environment
+      format: "{{ .hostgroup }} - click path"
+      type: compound
+      references:
+        - hostgroup
+      hostgroup:
+        type: environment
+        name: HostGroup
     parameters:
       applicationId:
         configId: config-id
