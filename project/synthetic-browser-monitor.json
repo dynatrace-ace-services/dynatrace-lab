@@ -17,9 +17,7 @@
       "retryOnError": true
     }
   },
-  "automaticallyAssignedApps": [
-    "{{ .applicationId }}"
-  ],
+  "automaticallyAssignedApps": [],
   "createdFrom": "API",
   "enabled": false,
   "events": [
