@@ -1,5 +1,5 @@
 #!/bin/bash
-. env.sh
+. ./env.sh
 #config=`cat project/config.yml | grep -m1  "\- id:"|cut -d " " -f  3`
 
 while [ "$APPLY" !=  "Y" ]
