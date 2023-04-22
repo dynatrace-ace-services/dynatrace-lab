@@ -38,8 +38,7 @@
   "name": "{{.name}} - http monitor",
   "requests": [
     {
-      "entityId": "HTTP_CHECK_STEP-A1F9FB2089E9043A",
-      "name": "easytravel01-httpmonitor",
+      "name": "request1",
       "sequenceNumber": 1
     }
   ],
@@ -53,7 +52,7 @@
         },
         "description": "easytravel01-httpmonitor",
         "method": "GET",
-        "url": "http://{{ .domain ]}}",
+        "url": "http://{{ .domain }}",
         "validation": {
           "rules": [
             {

@@ -112,7 +112,7 @@
       {
         "description": "Loading of page easytravel angular home",
         "type": "navigate",
-        "url": "http://{{ . domain }}:9079",
+        "url": "http://{{ .domain }}:9079",
         "wait": {
           "waitFor": "page_complete"
         }
