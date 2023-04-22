@@ -101,7 +101,6 @@ configs:
     settings:
       schema: builtin:problem.notifications
       scope: environment
-configs:
 ## http monitor
 ## disable for admin training
 - id: config-id
