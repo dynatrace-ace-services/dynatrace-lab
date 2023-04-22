@@ -30,7 +30,7 @@ configs:
       scope: environment
 ## application detection rule for domain azure (real activity) and attached to the application web
 ## disable for admin training
-- id: config-id2
+- id: config-id-2
   config:
     name:
       name: Appname
