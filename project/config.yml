@@ -117,7 +117,7 @@ configs:
       format: "{{ .hostgroup }} - http monitor"
       type: compound
       references:
-        - hostgroug
+        - hostgroup
       hostgroup:
         type: environment
         name: HostGroup
