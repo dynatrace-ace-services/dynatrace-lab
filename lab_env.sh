@@ -2,7 +2,7 @@
 export DT_TENANT_URL="https://abcd.live.dynatrace.com"
 export DT_API_TOKEN="XXX"
 #unique id
-export config-id=config-id
+export config-id="id"
 #export variables application
 export Appname="easytravelxx"
 export Hostname="yyy.zzz.dynatrace.com"
