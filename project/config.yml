@@ -129,6 +129,12 @@ configs:
         configType: application-web
         property: id
         type: reference
+      site1:
+        name: PublicSyntheticLocation1
+        type: environment
+      site2:
+        name: PublicSyntheticLocation2
+        type: environment
     template: browser-monitor.json
     skip: false
   type:
@@ -176,7 +182,6 @@ configs:
     skip: false
   type:
     api: dashboard
-
 # generic config
 ## auto tag "app" 
 - id: tag-env
