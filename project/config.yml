@@ -18,10 +18,10 @@ configs:
       type: compound
       references:
         - hostgroup
+    parameters:
       hostgroup:
         type: environment
         name: HostGroup
-    parameters:
       applicationId:
         configId: config-id
         configType: application-web
@@ -114,11 +114,11 @@ configs:
       format: "{{ .hostgroup }} - http monitor"
       type: compound
       references:
-        - hostgroup
+        - hostgroug
+    parameters:
       hostgroup:
         type: environment
         name: HostGroup
-    parameters:
       applicationId:
         configId: config-id
         configType: application-web
@@ -146,10 +146,10 @@ configs:
       type: compound
       references:
         - hostgroup
+    parameters:
       hostgroup:
         type: environment
         name: HostGroup
-    parameters:
       applicationId:
         configId: config-id
         configType: application-web
