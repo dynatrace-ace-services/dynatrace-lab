@@ -50,5 +50,8 @@ do
         esac
 done
 echo "Let's start deployment: "
-echo " 1. run local variables:   . env.sh"
-echo " 2. run monaco v2:         ./monaco deploy manifest.yaml"
+echo " - set the variables on local session:      . env.sh"
+echo " - deploy configuration with monaco:        ./monaco deploy manifest.yaml"
+echo " - backup config with monaco:               ./monaco download manifest.yaml -e MyEnv"
+echo " - if needed, delete config with monaco:    ./monaco delete manifest.yaml"
+
