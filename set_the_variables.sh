@@ -1,6 +1,5 @@
 #!/bin/bash
 . ./env.sh
-config=`cat project/config.yml | grep -m1  "\- id:"|awk -F' ' '{ print $3 }'`
 
 while [ "$APPLY" !=  "Y" ]
 do
@@ -12,11 +11,10 @@ do
         echo "2) export HostGroupName="$HostGroupName
         echo "3) export DomainName="$DomainName
         echo "4) export Email="$Email
-        echo "5) project/config.yaml, generate a unique id: "$config 
         echo "A) Apply the configuration (Ctrl/c to quit)"
         echo ""
         sleep 0.2
-        read  -p "Input Selection (0, 1, 2, 3, 4, 5 or A ): " reponse
+        read  -p "Input Selection (0, 1, 2, 3, 4 or A ): " reponse
 
         case "$reponse" in
                 "0") read  -p "0) export DT_TENANT_URL=https://" value
@@ -34,18 +32,11 @@ do
                 "4") read  -p "4) export Email=" value
                      sed -i s/Email=.*$/Email=\"$value\"/g ./env.sh;. ./env.sh
                 ;;
-                "5") if [[ $config == "config-id" ]];then
-                      config=`uuidgen`
+                "A") APPLY="Y"
                       mv project/config.yml project/config.yml.ref
                       mv delete.yaml delete.yaml.ref
-                      sed "s/config-id/$config/g" project/config.yml.ref > project/config.yml
-                      sed "s/config-id/$config/g" delete.yaml.ref > delete.yaml
-                      #sed -i "s/config-id/$config/g" ./env.sh;. ./env.sh
-                     fi
-                     
-                ;;
-                "A") APPLY="Y"
-                     . ./env.sh
+                      sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
+                      sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
                 ;;
         esac
 done
