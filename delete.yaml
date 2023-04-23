@@ -1,11 +1,11 @@
 delete:
   - application-web/config-id
-  - builtin:rum.web.app-detection/config-id
-  - builtin:rum.web.app-detection/config-id-2
-  - builtin:alerting.profile/config-id
-  - builtin:management-zones/config-id
-  - builtin:problem.notifications/config-id
+  - app-detection-rule/config-id
+  - app-detection-rule/config-id-2
+  - alerting-profile/config-id
+  - management-zone/config-id
+  - notification/config-id
   - synthetic-monitor/config-id
   - synthetic-monitor/config-id-2
-  - builtin:alerting.maintenance-window/config-id
+  - maintenance-window/config-id
   - dashboard/config-id
