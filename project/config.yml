@@ -4,7 +4,7 @@ configs:
 - id: config-id #need to be unique
   config:
     name:
-      name: HostGroup
+      name: HostGroupName
       type: environment
     template: application-web.json
     skip: false
@@ -14,17 +14,17 @@ configs:
 - id: config-id
   config:
     name:
-      format: "{{ .hostgroup }}-www"
+      format: "{{ .HostGroupName }}-www"
       type: compound
       references:
-        - hostgroup
-      hostgroup:
+        - HostGroupName
+      HostGroupName:
         type: environment
-        name: HostGroup
+        name: HostGroupName
     parameters:
-      hostgroup:
+      HostGroupName:
         type: environment
-        name: HostGroup
+        name: HostGroupName
       applicationId:
         configId: config-id
         configType: application-web
@@ -41,7 +41,7 @@ configs:
 - id: config-id-2
   config:
     name:
-      name: HostGroup
+      name: HostGroupName
       type: environment
     parameters:
       applicationId:
@@ -62,7 +62,7 @@ configs:
 - id: config-id
   config:
     name:
-      name: HostGroup
+      name: HostGroupName
       type: environment
     parameters:
       mzid:
@@ -80,7 +80,7 @@ configs:
 - id: config-id
   config:
     name:
-      name: HostGroup
+      name: HostGroupName
       type: environment
     template: management-zone.json
     skip: false
@@ -92,7 +92,7 @@ configs:
 - id: config-id
   config:
     name:
-      name: HostGroup
+      name: HostGroupName
       type: environment
     parameters:
       alertingprofileId:
@@ -114,17 +114,17 @@ configs:
 - id: config-id
   config:
     name:
-      format: "{{ .hostgroup }} - http monitor"
+      format: "{{ .HostGroupName }} - http monitor"
       type: compound
       references:
-        - hostgroup
-      hostgroup:
+        - HostGroupName
+      HostGroupName:
         type: environment
-        name: HostGroup
+        name: HostGroupName
     parameters:
-      hostgroup:
+      HostGroupName:
         type: environment
-        name: HostGroup
+        name: HostGroupName
       applicationId:
         configId: config-id
         configType: application-web
@@ -148,17 +148,17 @@ configs:
 - id: config-id-2
   config:
     name: 
-      format: "{{ .hostgroup }} - click path"
+      format: "{{ .HostGroupName }} - click path"
       type: compound
       references:
-        - hostgroup
-      hostgroup:
+        - HostGroupName
+      HostGroupName:
         type: environment
-        name: HostGroup
+        name: HostGroupName
     parameters:
-      hostgroup:
+      HostGroupName:
         type: environment
-        name: HostGroup
+        name: HostGroupName
       applicationId:
         configId: config-id
         configType: application-web
@@ -181,7 +181,7 @@ configs:
 - id: config-id
   config:
     name:
-      name: HostGroup    
+      name: HostGroupName    
       type: environment
     parameters:
       mzid:
@@ -199,11 +199,11 @@ configs:
 - id: config-id
   config:
     name:
-      name: HostGroup
+      name: HostGroupName
       type: environment
     parameters:
-      hostgroup:
-        name: HostGroup
+      HostGroupName:
+        name: HostGroupName
         type: environment
       domain:
         name: DomainName
