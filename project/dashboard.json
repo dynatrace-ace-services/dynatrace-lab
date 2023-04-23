@@ -1,10 +1,4 @@
 {
-  "metadata": {
-    "configurationVersions": [
-      5
-    ],
-    "clusterVersion": "1.238.121.20220406-200859"
-  },
   "dashboardMetadata": {
 	"name": "{{ .name }}",
 	"owner": "{{.owner}}",
@@ -13,7 +7,7 @@
       "timeframe": "-1h",
       "managementZone": {
 		"id": "{{.mzid}}",
-		"name": "{{.hostgroup}}"
+		"name": "{{.name}}"
       }
     },
     "tags": [
@@ -63,7 +57,7 @@
         "height": 152
       },
       "tileFilter": {},
-      "markdown": "## {{.hostgroup}} - {{.owner}}\n💻 Linux : [https://{{.domain}}](https://{{.domain}})      \n✈  Easytravel-angular: [http://{{.domain}}:9079](http://{{.domain}}:9079)    \n✈  Easytravel-classic: [http://{{.domain}}/orange.jsf](http://{{.domain}}/orange.jsf)  \n🛸 How to use Dynatrace : [https://www.dynatrace.com/support/help/how-to-use-dynatrace/](https://www.dynatrace.com/support/help/how-to-use-dynatrace/)     \n📊 Bizopsconfigurator : [https://dynatrace.github.io/BizOpsConfigurator/index.html](https://dynatrace.github.io/BizOpsConfigurator/index.html#miscTools)"
+      "markdown": "## {{.name}} - {{.owner}}\n💻 Linux : [https://{{.domain}}](https://{{.domain}})      \n✈  Easytravel-angular: [http://{{.domain}}:9079](http://{{.domain}}:9079)    \n✈  Easytravel-classic: [http://{{.domain}}/orange.jsf](http://{{.domain}}/orange.jsf)  \n🛸 How to use Dynatrace : [https://www.dynatrace.com/support/help/how-to-use-dynatrace/](https://www.dynatrace.com/support/help/how-to-use-dynatrace/)     \n📊 Bizopsconfigurator : [https://dynatrace.github.io/BizOpsConfigurator/index.html](https://dynatrace.github.io/BizOpsConfigurator/index.html#miscTools)"
     },
     {
       "name": "Host health",
@@ -346,7 +340,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "[Visits](#usersearchoverview;filtrfilterAType=1;filtrfilterUserType=REAL_USER) - [Happy users 😄](#usersearchoverview;filtrfilterUXScore=3) - [Tolerated users 😏](#usersearchoverview;filtrfilterUXScore=2) -  [Frustated Users 😡](#usersearchoverview;filtrfilterUXScore=1)"
+      "markdown": "[Visits](/ui/user-sessions) - [Happy users 😄](/ui/user-sessions?filter=uxScore:Satisfying) - [Tolerated users 😏](/ui/user-sessions?filter=uxScore:Tolerable) -  [Frustated Users 😡](/ui/user-sessions?filter=uxScore:Frustrating)"
     },
     {
       "name": "Markdown",
