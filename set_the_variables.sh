@@ -9,7 +9,7 @@ do
         echo ""
         echo "0) export DT_TENANT_URL="$DT_TENANT_URL
         echo "1) export DT_API_TOKEN="$DT_API_TOKEN
-        echo "2) export HostGroup="$HostGroup
+        echo "2) export HostGroupName="$HostGroupName
         echo "3) export DomainName="$DomainName
         echo "4) export Email="$Email
         echo "5) project/config.yaml, generate a unique id: "$config 
@@ -25,8 +25,8 @@ do
                 "1") read  -p "1) export DT_API_TOKEN=" value
                      sed -i s/DT_API_TOKEN=.*$/DT_API_TOKEN=\"$value\"/g ./env.sh;. ./env.sh
                 ;;
-                "2") read  -p "2) export HostGroup=" value
-                     sed -i s/HostGroup=.*$/HostGroup=\"$value\"/g ./env.sh;. ./env.sh
+                "2") read  -p "2) export HostGroupName=" value
+                     sed -i s/HostGroupName=.*$/HostGroupName=\"$value\"/g ./env.sh;. ./env.sh
                 ;;
                 "3") read  -p "3) export DomainName=" value
                      sed -i s/DomainName=.*$/DomainName=\"$value\"/g ./env.sh;. ./env.sh
