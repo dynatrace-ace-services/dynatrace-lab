@@ -12,7 +12,7 @@ do
         echo "2) export HostGroup="$HostGroup
         echo "3) export DomainName="$DomainName
         echo "4) export Email="$Email
-        echo "5) project/config.yaml, need a unique id: "$config 
+        echo "5) project/config.yaml, generate a unique id: "$config 
         echo "A) Apply the configuration (Ctrl/c to quit)"
         echo ""
         sleep 0.2
