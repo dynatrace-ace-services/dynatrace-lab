@@ -1,5 +1,5 @@
 delete:
-  - application-web/configi-id
+  - application-web/config-id
   - builtin:rum.web.app-detection/config-id
   - builtin:rum.web.app-detection/config-id-2
   - builtin:alerting.profile/config-id
