@@ -53,5 +53,5 @@ echo "Let's start deployment: "
 echo " - set the variables on local session:      . env.sh"
 echo " - deploy configuration with monaco:        ./monaco deploy manifest.yaml"
 echo " - backup config with monaco:               ./monaco download manifest.yaml -e MyEnv"
-echo " - if needed, delete config with monaco:    ./monaco delete manifest.yaml"
+echo " - if needed, delete config with monaco:    ./monaco delete"
 
