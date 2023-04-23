@@ -1,6 +1,6 @@
 #!/bin/bash
 . ./env.sh
-config=`cat project/config.yml | grep -m1  "\- id:"|cut -d " " -f  3`
+config=`cat project/config.yml | grep -m1  "\- id:"|sed 's/.* //'`
 
 while [ "$APPLY" !=  "Y" ]
 do
