@@ -1,6 +1,6 @@
 #!/bin/bash
 . ./env.sh
-#config=`cat project/config.yml | grep -m1  "\- id:"|cut -d " " -f  3`
+config=`cat project/config.yml | grep -m1  "\- id:"|cut -d " " -f  3`
 
 while [ "$APPLY" !=  "Y" ]
 do
@@ -36,7 +36,8 @@ do
                 ;;
                 "5") if [[ $config == "config-id" ]];then
                       config=`uuidgen`
-                      sed -i "s/config-id/$config/g" project/config.yml
+                      mv project/config.yml project/config.yml.ref
+                      sed "s/config-id/$config/g" project/config.yml.ref > project/config
                       sed -i "s/config-id/$config/g" ./env.sh;. ./env.sh
                      fi
                      
