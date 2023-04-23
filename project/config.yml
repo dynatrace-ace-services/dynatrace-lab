@@ -1,7 +1,7 @@
 configs:
 # config for specific id
 ## application web
-- id: config-id
+- id: config-id #need to be unique
   config:
     name:
       name: HostGroup
