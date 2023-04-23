@@ -1,6 +1,6 @@
 #!/bin/bash
 . ./env.sh
-config=`cat project/config.yml | grep -m1  "\- id:"|sed 's/.* //'`
+config=`cat project/config.yml | grep -m1  "\- id:"|awk -F' ' '{ print $3 }'`
 
 while [ "$APPLY" !=  "Y" ]
 do
