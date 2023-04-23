@@ -38,7 +38,7 @@ do
                       config=`uuidgen`
                       mv project/config.yml project/config.yml.ref
                       sed "s/config-id/$config/g" project/config.yml.ref > project/config
-                      sed -i "s/config-id/$config/g" ./env.sh;. ./env.sh
+                      #sed -i "s/config-id/$config/g" ./env.sh;. ./env.sh
                      fi
                      
                 ;;
