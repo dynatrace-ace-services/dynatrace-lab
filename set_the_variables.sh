@@ -37,9 +37,9 @@ do
                 "5") if [[ $config == "config-id" ]];then
                       config=`uuidgen`
                       mv project/config.yml project/config.yml.ref
-                      mv delete.yml delete.yml.ref
+                      mv delete.yaml delete.yaml.ref
                       sed "s/config-id/$config/g" project/config.yml.ref > project/config.yml
-                      sed "s/config-id/$config/g" delete.yml.ref > delete.yml
+                      sed "s/config-id/$config/g" delete.yaml.ref > delete.yaml
                       #sed -i "s/config-id/$config/g" ./env.sh;. ./env.sh
                      fi
                      
