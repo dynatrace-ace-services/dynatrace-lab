@@ -242,7 +242,7 @@ configs:
       schema: builtin:tags.auto-tagging
       scope: environment
 ## auto tag "bu" use metadata bu
-- id: tag-app
+- id: tag-bu
   config:
     name: bu
     template: auto-tag-bu.json
