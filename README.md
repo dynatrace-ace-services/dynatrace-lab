@@ -27,7 +27,7 @@ We will use the lab VM as a tooling host and not as an application host.
 
     cd
     git clone https://github.com/dynatrace-ace-services/dynatrace-lab
-    echo "end of step 1 - the lab is copy here home/dynatrace-lab"
+    echo "the lab is copy here "`pwd`"/dynatrace-lab"
     
 
 ## Step 2 : install monaco V2
@@ -35,11 +35,12 @@ We will use the lab VM as a tooling host and not as an application host.
     cd;cd dynatrace-lab/
     curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
     chmod +x monaco
-    echo "end of step 2 - monaco v2 is installed on your tool host"
+    echo 'monaco v2 is installed on your host"
     
 ## Step 3 : set the variables 
 use this script to configure the variables on linux environment  
 
+    cd;cd dynatrace-lab
     sh set_the_variables.sh
 
 validation  
@@ -50,20 +51,25 @@ validation
 
 export the variables on the local session
     
+    cd;cd dynatrace-lab
     . env.sh
-    echo "end of step 3 - the variables have been setted on the local session"
      
 ## Step 4 : deploy with monaco 
 
+Show the config.yaml
+
+    cd;cd dynatrace-lab
+    more project/config.yaml
+    
+Run monaco  
+
     cd;cd dynatrace-lab
     ./monaco deploy manifest.yaml
-    echo "end of step 4 - the configuration has been deployed on the tenant"
 
 ## Step 5 (optional) : backup with monaco 
 
     cd;cd dynatrace-lab
     ./monaco download manifest.yaml -e MyEnv
-    echo "end of step 5 - the full configuration has been backuped"
 
 ## Step 6 (optional) : redeploy specific management-zone configuration from backup json 
 
@@ -93,5 +99,4 @@ keep only your id in this file (delete the ohers) and chnage the name like here 
 On Dynatrace UI, verify that you have a new management zone : `My_easytravelXX`, similair to the previous one `lab_easytravelxx`
 
     echo "Go to the mz settings on the UI : "$DT_TENANT_URL"/ui/settings/builtin:management-zones"
-    echo "end of step 6 - a new mz has been deployed on Dynatrace "
     
