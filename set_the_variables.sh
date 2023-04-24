@@ -33,15 +33,16 @@ do
                      sed -i s/Email=.*$/Email=\"$value\"/g ./env.sh;. ./env.sh
                 ;;
                 "A") APPLY="Y"
-                      echo "project/config.yml, setting unique id: "$HostGroupName  
                       mv project/config.yml project/config.yml.ref
                       mv delete.yaml delete.yaml.ref
                       sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
                       sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
+                      echo "project/config.yml has been configured with the unique id: "$HostGroupName
+                      echo
                 ;;
         esac
 done
-echo "Let's start deployment: "
+echo "Let's start deployment for "$HostGroupName
 echo " - set the variables on local session:      . env.sh"
 echo " - deploy configuration with monaco:        ./monaco deploy manifest.yaml"
 echo " - backup config with monaco:               ./monaco download manifest.yaml -e MyEnv"
