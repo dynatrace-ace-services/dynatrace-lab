@@ -55,7 +55,7 @@ export the variables on the local session
     cd;cd dynatrace-lab
     . env.sh
      
-## Step 4 : deploy with monaco 
+## Step 4 : deploy with monaco V2
 
 Show the config.yaml
 
