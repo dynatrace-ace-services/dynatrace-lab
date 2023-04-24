@@ -48,6 +48,7 @@ validation
     HostGroupName (mandatory, contains env & app)         = <env>_<application>
     DomainName (web application)                          = <domain>.<com>
     Email (to associate dashboard and email notification) = <name>@<idp.com> 
+    A) to apply the configuration : env.sh & project/config.yml 
 
 export the variables on the local session
     
@@ -59,7 +60,7 @@ export the variables on the local session
 Show the config.yaml
 
     cd;cd dynatrace-lab
-    more project/config.yaml
+    more project/config.yml
     
 Run monaco  
 
