@@ -3,16 +3,14 @@
   "rules": [
     {
       "enabled": true,
-      "valueFormat": "{Host:Environment:env}",
+      "valueFormat": "{HostGroup:Name/([^_]++)}",
       "valueNormalization": "Leave text as-is",
       "type": "ME",
       "attributeRule": {
         "entityType": "PROCESS_GROUP",
         "conditions": [
           {
-            "key": "HOST_CUSTOM_METADATA",
-            "dynamicKeySource": "ENVIRONMENT",
-            "dynamicKey": "env",
+            "key": "HOST_GROUP_NAME",
             "operator": "EXISTS"
           }
         ],
