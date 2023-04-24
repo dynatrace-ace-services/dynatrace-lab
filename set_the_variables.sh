@@ -33,6 +33,7 @@ do
                      sed -i s/Email=.*$/Email=\"$value\"/g ./env.sh;. ./env.sh
                 ;;
                 "A") APPLY="Y"
+                      echo "project/config.yml, setting unique id: "$HostGroupName  
                       mv project/config.yml project/config.yml.ref
                       mv delete.yaml delete.yaml.ref
                       sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
