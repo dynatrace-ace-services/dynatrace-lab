@@ -44,8 +44,8 @@ use this script to configure the variables on linux environment
 
 validation  
 
-    HostGroupName (mandatory : contains env& app)         = "<env>_<application>"
-    DomainName (application)                              = <domain>.<com>
+    HostGroupName (mandatory, contains env & app)         = <env>_<application>
+    DomainName (web application)                          = <domain>.<com>
     Email (to associate dashboard and email notification) = <name>@<idp.com> 
 
 export the variables on the local session
