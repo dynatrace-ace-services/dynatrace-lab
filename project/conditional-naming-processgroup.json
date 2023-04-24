@@ -7,7 +7,7 @@
    0
   ]
  },
- "nameFormat": "[{HostGroup:Name}] - {DockerContainerGroupInstance:ContainerName/dynatrace\\/(.++)}",
+ "nameFormat": "[{HostGroup:Name}] - {DockerContainerGroupInstance:ContainerName}",
  "rules": [
   {
    "comparisonInfo": {
