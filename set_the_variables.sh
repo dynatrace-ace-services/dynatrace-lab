@@ -37,7 +37,8 @@ do
                       mv delete.yaml delete.yaml.ref
                       sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
                       sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
-                      echo "project/config.yml has been configured with the unique id: "$HostGroupName
+                      echo "- env.sh is configured with the variables, ready to be exported"
+                      echo "- project/config.yml, is configured with the unique id: "$HostGroupName" ready to be dployed with monaco"
                       echo
                 ;;
         esac
