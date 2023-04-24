@@ -37,15 +37,15 @@ do
                       mv delete.yaml delete.yaml.ref
                       sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
                       sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
-                      echo "- env.sh is configured with the variables, ready to be exported"
-                      echo "- project/config.yml, is configured with the unique id: "$HostGroupName" ready to be dployed with monaco"
+                      echo "- env.sh is configured with all the variables and is ready to be exported locally"
+                      echo "- project/config.yml, is configured with the unique id: "$HostGroupName" and is ready to be daployed with monaco"
                       echo
                 ;;
         esac
 done
 echo "Let's start deployment for "$HostGroupName
-echo " - set the variables on local session:      . env.sh"
-echo " - deploy configuration with monaco:        ./monaco deploy manifest.yaml"
-echo " - backup config with monaco:               ./monaco download manifest.yaml -e MyEnv"
-echo " - if needed, delete config with monaco:    ./monaco delete"
+echo " - export the variables on local session:      . env.sh"
+echo " - deploy json configurations with monaco:     ./monaco deploy manifest.yaml"
+echo " - backup json configurations with monaco:     ./monaco download manifest.yaml -e MyEnv"
+echo " - (optional) delete config with monaco:       ./monaco delete"
 
