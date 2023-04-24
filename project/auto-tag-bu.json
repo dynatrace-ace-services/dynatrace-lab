@@ -12,7 +12,7 @@
           {
             "key": "HOST_CUSTOM_METADATA",
             "dynamicKeySource": "ENVIRONMENT",
-            "dynamicKey": "env",
+            "dynamicKey": "bu",
             "operator": "EXISTS"
           }
         ],
