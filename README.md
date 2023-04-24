@@ -84,7 +84,7 @@ modifiy config.yaml for mz
     cd backup-mz/project_MyEnv/management-zone
     nano config.yaml
 
-keep only your id in this file (delete the ohers) and chnage the name like here : 
+keep only your id in this file (delete the ohers) and change the name like here : 
     
     delete the id section dfferent to your managament-zone
     rename your management-zone
