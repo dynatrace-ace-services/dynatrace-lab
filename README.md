@@ -20,7 +20,7 @@ We will use the lab VM as a tooling host and not as an application host.
 
 ## Step 0 : a tool host for monaco 
 
-    Monaco can be installed anywhere, on your desktop : linux, windows, or on a tooling k8s, but never on an application host ! 
+    Monaco can be installed anywhere, on your desktop : linux, windows, or on a tooling k8s, but never on an application host! 
     (except during this training)
 
 ## Step 1 : clone this git  
@@ -38,18 +38,19 @@ We will use the lab VM as a tooling host and not as an application host.
     echo "end of step 2 - monaco v2 is installed on your tool host"
     
 ## Step 3 : set the variables 
-
 use this script to configure the variables on linux environment  
 
     sh set_the_variables.sh
 
-open the file `lab_env.sh` to validate the variables manually
+validation  
+
+    HostGroupName (mandatory : contains env& app)         = "<env>_<application>"
+    DomainName (application)                              = <domain>.<com>
+    Email (to associate dashboard and email notification) = <name>@<idp.com> 
+
+export the variables on the local session
     
-    cat lab_env.sh
-    
-set the variables on the local session
-    
-    . lab_env.sh
+    . env.sh
     echo "end of step 3 - the variables have been setted on the local session"
      
 ## Step 4 : deploy with monaco 
@@ -89,7 +90,7 @@ keep only your id in this file (delete the ohers) and chnage the name like here 
     cd;cd dynatrace-lab/backup-mz
     ../monaco deploy manifest.yaml
     
-On Dynatrace UI, verify that you have a new management zone : `My_easytravelXX`, similair to the previous one `easytravelxx`
+On Dynatrace UI, verify that you have a new management zone : `My_easytravelXX`, similair to the previous one `lab_easytravelxx`
 
     echo "Go to the mz settings on the UI : "$DT_TENANT_URL"/ui/settings/builtin:management-zones"
     echo "end of step 6 - a new mz has been deployed on Dynatrace "
