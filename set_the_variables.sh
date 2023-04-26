@@ -37,8 +37,8 @@ do
                       #mv delete.yaml delete.yaml.ref
                       sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
                       sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
-                      echo "- env.sh is configured with all the variables and is ready to be exported locally"
-                      echo "- project/config.yml, is configured with the unique id: "$HostGroupName" and is ready to be daployed with monaco"
+                      echo "- env.sh is ready to be exported locally"
+                      echo "- project/config.yml, is configured with the unique id: "$HostGroupName
                       echo
                 ;;
         esac
