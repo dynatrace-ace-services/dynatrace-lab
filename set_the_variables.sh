@@ -20,12 +20,11 @@ do
         echo "2) export HostGroupName="$HostGroupName
         echo "3) export DomainName="$DomainName
         echo "4) export Email="$Email
-        echo 
-        ####################################################
+        echo " #####################"
         echo "A) Backup json config> ./monaco download manifest -e MyEnv"
         echo "B) Deploy json config> ./monaco deploy manifest"
         echo "C) Delete json config> ./monaco delete"
-        echo 
+        echo " #####################"
         echo "Q) Quit or run monaco manually"
         echo "## info => "$info 
         sleep 0.2
@@ -59,22 +58,22 @@ do
                    if [[ ${value^} = Y ]]; then
                      ./monaco download manifest.yaml -e MyEnv
                      export info="all json config has been downloaded on the local host with monaco v2"
-                   fi
                      read  -p "Press any key to continue " pressanycase
+                   fi
                 ;;
                 "B") read  -p "B) Deploy json config> ./monaco deploy manifest  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
                      ./monaco deploy manifest.yaml
                       export info=$HostGroupName" config has been deployed on your tenant "$DT_TENANT_URL
-                   fi
                       read  -p "Press any key to continue " pressanycase
+                   fi
                 ;;
                 "C") read  -p "C) Delete json config> ./monaco delete  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
-                     ./monaco delete
-                     export info=$HostGroupName" config has been deleted on your tenant "$DT_TENANT_URL
-                   fi
+                      ./monaco delete
+                      export info=$HostGroupName" config has been deleted on your tenant "$DT_TENANT_URL
                       read  -p "Press any key to continue " pressanycase
+                   fi
                 ;;
                 "Q") APPLY="Y"
                         echo
