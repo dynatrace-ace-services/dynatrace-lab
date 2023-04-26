@@ -19,7 +19,6 @@ do
         echo "C) Delete json config> ./monaco delete"
         echo 
         echo "Q) Quit or run monaco manually"
-        echo
         echo "## info => "$info 
         echo ""
         sleep 0.2
