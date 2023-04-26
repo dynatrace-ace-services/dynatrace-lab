@@ -55,7 +55,7 @@ do
                 #############################################################
                 "A") read  -p "A) ./monaco download manifest -e MyEnv  [Y/N]" value
                    if [[ ${value^} = Y ]]; then
-                     cat "./monaco download manifest.yaml -e MyEnv"
+                     echo "./monaco download manifest.yaml -e MyEnv"
                      ./monaco download manifest.yaml -e MyEnv
                      export info="all json config has been downloaded on the local host with monaco v2"
                      read  -p "Press any key to continue " pressanycase
@@ -63,7 +63,7 @@ do
                 ;;
                 "B") read  -p "B) ./monaco deploy manifest  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
-                      cat "./monaco deploy manifest.yaml"
+                      echo "./monaco deploy manifest.yaml"
                       ./monaco deploy manifest.yaml
                       export info=$HostGroupName" config has been deployed on your tenant "$DT_TENANT_URL
                       read  -p "Press any key to continue " pressanycase
@@ -71,7 +71,7 @@ do
                 ;;
                 "C") read  -p "C) ./monaco delete  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
-                      cat "./monaco delete"
+                      echo "./monaco delete"
                       ./monaco delete
                       export info=$HostGroupName" config has been deleted on your tenant "$DT_TENANT_URL
                       read  -p "Press any key to continue " pressanycase
