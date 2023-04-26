@@ -54,21 +54,21 @@ do
                      export info="Email is used by dashboard owner and email notification - example : myemail@mail.com"
                 ;;
                 #############################################################
-                "A") read  -p "A) Backup json config> ./monaco download manifest -e MyEnv  [Y/N]" value
+                "A") read  -p "A) ./monaco download manifest -e MyEnv  [Y/N]" value
                    if [[ ${value^} = Y ]]; then
                      ./monaco download manifest.yaml -e MyEnv
                      export info="all json config has been downloaded on the local host with monaco v2"
                      read  -p "Press any key to continue " pressanycase
                    fi
                 ;;
-                "B") read  -p "B) Deploy json config> ./monaco deploy manifest  [Y/N]" value
+                "B") read  -p "B) ./monaco deploy manifest  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
                      ./monaco deploy manifest.yaml
                       export info=$HostGroupName" config has been deployed on your tenant "$DT_TENANT_URL
                       read  -p "Press any key to continue " pressanycase
                    fi
                 ;;
-                "C") read  -p "C) Delete json config> ./monaco delete  [Y/N]" value
+                "C") read  -p "C) ./monaco delete  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
                       ./monaco delete
                       export info=$HostGroupName" config has been deleted on your tenant "$DT_TENANT_URL
