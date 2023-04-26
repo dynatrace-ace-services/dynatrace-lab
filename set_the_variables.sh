@@ -56,18 +56,21 @@ do
                    if [[ ${value^} = Y ]]; then
                      ./monaco download manifest.yaml -e MyEnv
                      info_monaco = "Json config has been downloaded on the local host with monaco v2"
+                     read  -p "Press any key to continue " pressanycase
                    fi
                 ;;
                 "B") read  -p "B) Deploy json config> ./monaco deploy manifest  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
                      ./monaco deploy manifest.yaml
                       info_monaco = $HostGroupName" config has been deployed on your tenant "$DT_TENANT_URL
+                      read  -p "Press any key to continue " pressanycase
                    fi
                 ;;
                 "C") read  -p "C) Delete json config> ./monaco delete  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
                      ./monaco delete
                      info_monaco = $HostGroupName" config has been deleted on your tenant "$DT_TENANT_URL
+                     read  -p "Press any key to continue " pressanycase
                    fi
                 ;;
                 "Q") APPLY="Q"
