@@ -90,15 +90,13 @@ do
                         echo " - backup json configurations with monaco:     ./monaco download manifest.yaml -e MyEnv"
                         echo " - (optional) delete config with monaco:       ./monaco delete"
                         echo
-                        echo
                         echo "if you want to sse monaco configuration files:"
                         echo " - cat manifest.yaml"
                         echo " - more project/config.yml"
                         echo " - ls -lrt project"
                         echo " - cat delete.yaml"
                         echo
-                        echo
-                        echo "validate the result on dynatrace UI : "
+                        echo "if you want to validate the result on dynatrace UI : "
                         echo " - application-web : $DT_TENANT_URL/#uemapplications"
                         echo " - app-detection-rule: $DT_TENANT_URL/ui/settings/builtin:rum.web.app-detection"
                         echo " - management-zone: $DT_TENANT_URL/ui/settings/builtin:management-zones"
@@ -110,7 +108,7 @@ do
                         echo " - processgroup-naming: $DT_TENANT_URL/#settings/pgnamingsettings"
                         echo " - sevice-naming: $DT_TENANT_URL/#settings/servicenamingsettings"
                         echo " - dashboard: $DT_TENANT_URL/ui/dashboards?showAll=true&filters=owner%3D"$Email
+                        echo
                 ;;
         esac
 done
-
