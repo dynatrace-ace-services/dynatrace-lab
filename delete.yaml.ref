@@ -1,3 +1,4 @@
+## This delete.yaml is an example, modify only delete.yml.ref - which is used as reference. 
 delete:
   - application-web/config-id
   - app-detection-rule/config-id
