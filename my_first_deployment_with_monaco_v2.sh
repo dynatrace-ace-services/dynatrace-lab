@@ -12,7 +12,7 @@ sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
 while [ "$APPLY" !=  "Y" ]
 do
         clear
-        echo "Variables : "
+        echo "my_first_deployment_with_monaco_v2.sh"
         echo ""
         echo "0) export DT_TENANT_URL="$DT_TENANT_URL
         echo "1) export DT_API_TOKEN="${DT_API_TOKEN:0:32}"*****"
