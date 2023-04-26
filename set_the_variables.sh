@@ -33,25 +33,25 @@ do
         case "$reponse" in
                 "0") read  -p "0) export DT_TENANT_URL=https://" value
                      sed -i 's/DT_TENANT_URL=.*$/DT_TENANT_URL=\"https\:\/\/'$value'\"/g' ./env.sh;. ./env.sh
-                     export info="DT_TENANT_URL has been set for the manifest.yaml"
+                     export info="DT_TENANT_URL has been set for the manifest.yaml - example : https://abcdd.live.dynatrace.com.com"
                 ;;
                 "1") read  -p "1) export DT_API_TOKEN=" value
                      sed -i s/DT_API_TOKEN=.*$/DT_API_TOKEN=\"$value\"/g ./env.sh;. ./env.sh
-                     export info="DT_API_TOKEN has been set for the manifest.yaml"
+                     export info="DT_API_TOKEN has been set for the manifest.yaml - example : dt.ABCDEFGH.0123456789"
                 ;;
                 "2") read  -p "2) export HostGroupName=" value
                      sed -i s/HostGroupName=.*$/HostGroupName=\"$value\"/g ./env.sh;. ./env.sh
                      sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
                      sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
-                     export info="HostGroupName is used by ManagementZone, AlertingProfile, MaintenanceWindow & the file project/config.yml has a unique id: "$HostGroupName
+                     export info="HostGroupName is used by ManagementZone, AlertingProfile, MaintenanceWindow - example : <env>_<app> & the file project/config.yml has a unique id: "$HostGroupName
                 ;;
                 "3") read  -p "3) export DomainName=" value
                      sed -i s/DomainName=.*$/DomainName=\"$value\"/g ./env.sh;. ./env.sh
-                     export info="DomainName is used by set for application and dashbaord markrdown"
+                     export info="DomainName is used by application and dashbaord markdown - example : mydomain.com"
                 ;;
                 "4") read  -p "4) export Email=" value
                      sed -i s/Email=.*$/Email=\"$value\"/g ./env.sh;. ./env.sh
-                     export info="Email is used by dashboard owner and email notification"
+                     export info="Email is used by dashboard owner and email notification - example : myemail@mail.com"
                 ;;
                 #############################################################
                 "A") read  -p "A) Backup json config> ./monaco download manifest -e MyEnv  [Y/N]" value
