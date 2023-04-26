@@ -51,6 +51,10 @@ use this script to configure the variables on linux environment
     - Validate new configuration in Dynatrace UI
     (optional run monaco delete)
 
+./monaco deploy manifest.yaml  
+![image](https://user-images.githubusercontent.com/40337213/234710222-6a56b700-36a6-4c74-93a9-ca6e794a8770.png)
+
+
 ## Step 4 (optional) : redeploy specific management-zone configuration from backup json 
 
 download mz configuration 
