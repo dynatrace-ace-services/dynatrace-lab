@@ -15,11 +15,11 @@ do
         echo "4) export Email="$Email
         echo $info_var
         ####################################################
-        echo "A) ./monaco download manifest -e MyEnv"
-        echo "B) ./monaco deploy manifest"
-        echo "C) ./monaco delete"
+        echo "A) Backup json config> ./monaco download manifest -e MyEnv"
+        echo "B) Deploy json config> ./monaco deploy manifest"
+        echo "C) Delete json config> ./monaco delete"
         echo $info_monaco
-        echo "Q) Quit (or Ctr+C)"
+        echo "Q) Quit or run monaco manually"
         echo ""
         sleep 0.2
         read  -p "Input Selection (0, 1, 2, 3, 4 or A, B, C, Q ): " reponse
