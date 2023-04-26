@@ -51,7 +51,7 @@ use this script to configure the variables on linux environment
     - Validate new configuration in Dynatrace UI
     (optional run monaco delete)
     
-    ./monaco deploy manifest.yaml  
+./monaco deploy manifest.yaml  
 
 ![image](https://user-images.githubusercontent.com/40337213/234711096-84d29528-21ba-4e4a-8f91-7af592f81e2e.png)
 
