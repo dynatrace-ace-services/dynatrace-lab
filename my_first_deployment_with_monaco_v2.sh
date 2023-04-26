@@ -91,6 +91,13 @@ do
                         echo " - (optional) delete config with monaco:       ./monaco delete"
                         echo
                         echo
+                        echo "if you want to sse monaco configuration files:"
+                        echo " - cat manifest.yaml"
+                        echo " - more project/config.yml"
+                        echo " - ls -lrt project"
+                        echo " - cat delete.yaml"
+                        echo
+                        echo
                         echo "validate the result on dynatrace UI : "
                         echo " - application-web : $DT_TENANT_URL/#uemapplications"
                         echo " - app-detection-rule: $DT_TENANT_URL/ui/settings/builtin:rum.web.app-detection"
