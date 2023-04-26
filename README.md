@@ -38,7 +38,7 @@ We will use the lab VM as a tooling host and not as an application host.
     echo "monaco v2 is installed on your host"
     
 ## Step 3 : my first deployment with monaco v2 
-use this script to configure the variables on linux environment  
+use this script to configure the variables on linux environment   
 
     cd;cd dynatrace-lab
     sh my_first_deployment_with_monaco_v2.sh
