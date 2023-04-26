@@ -2,7 +2,6 @@
 . ./env.sh
 info=''
 
-sed -i s/HostGroupName=.*$/HostGroupName=\"$value\"/g ./env.sh;. ./env.sh
 if [[ ! -f ./project/config.yml.ref ]]; then
   mv project/config.yml project/config.yml.ref
   mv delete.yaml delete.yaml.ref
