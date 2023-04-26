@@ -1,3 +1,4 @@
+## This config.yml is an example, modify only config.yml.ref - which is used as a reference. 
 configs:
 # config for specific id
 ## application web
