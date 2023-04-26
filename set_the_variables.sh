@@ -1,7 +1,6 @@
 #!/bin/bash
 . ./env.sh
-info_var='# => info var:'
-info_monaco=' => info monaco:'
+info=''
 
 while [ "$APPLY" !=  "Y" ]
 do
@@ -47,31 +46,31 @@ do
                 ;;
                 "3") read  -p "3) export DomainName=" value
                      sed -i s/DomainName=.*$/DomainName=\"$value\"/g ./env.sh;. ./env.sh
-                     export info_var="var DomainName has been set for application ans dashbaord markrdown"
+                     export info="var DomainName has been set for application ans dashbaord markrdown"
                 ;;
                 "4") read  -p "4) export Email=" value
                      sed -i s/Email=.*$/Email=\"$value\"/g ./env.sh;. ./env.sh
-                     export info_var="var Email has been set for dashboard owner and email notification"
+                     export info="var Email has been set for dashboard owner and email notification"
                 ;;
                 #############################################################
                 "A") read  -p "A) Backup json config> ./monaco download manifest -e MyEnv  [Y/N]" value
                    if [[ ${value^} = Y ]]; then
                      ./monaco download manifest.yaml -e MyEnv
-                     export info_monaco="Json config has been downloaded on the local host with monaco v2"
+                     export info="Json config has been downloaded on the local host with monaco v2"
                    fi
                      read  -p "Press any key to continue " pressanycase
                 ;;
                 "B") read  -p "B) Deploy json config> ./monaco deploy manifest  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
                      ./monaco deploy manifest.yaml
-                      export info_monaco=$HostGroupName" config has been deployed on your tenant "$DT_TENANT_URL
+                      export info=$HostGroupName" config has been deployed on your tenant "$DT_TENANT_URL
                    fi
                       read  -p "Press any key to continue " pressanycase
                 ;;
                 "C") read  -p "C) Delete json config> ./monaco delete  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
                      ./monaco delete
-                     export info_monaco=$HostGroupName" config has been deleted on your tenant "$DT_TENANT_URL
+                     export info=$HostGroupName" config has been deleted on your tenant "$DT_TENANT_URL
                    fi
                       read  -p "Press any key to continue " pressanycase
                 ;;
