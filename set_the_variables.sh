@@ -33,8 +33,8 @@ do
                      sed -i s/Email=.*$/Email=\"$value\"/g ./env.sh;. ./env.sh
                 ;;
                 "A") APPLY="Y"
-                      #mv project/config.yml project/config.yml.ref
-                      #mv delete.yaml delete.yaml.ref
+                      cp project/config.yml project/config.yml.old
+                      cp delete.yaml delete.yaml.old
                       sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
                       sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
                       echo "- env.sh is ready to be exported locally"
