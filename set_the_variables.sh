@@ -2,6 +2,14 @@
 . ./env.sh
 info=''
 
+sed -i s/HostGroupName=.*$/HostGroupName=\"$value\"/g ./env.sh;. ./env.sh
+if [[ ! -f ./project/config.yml.ref ]]; then
+  mv project/config.yml project/config.yml.ref
+  mv delete.yaml delete.yaml.ref
+fi
+sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
+sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
+
 while [ "$APPLY" !=  "Y" ]
 do
         clear
@@ -34,10 +42,6 @@ do
                 ;;
                 "2") read  -p "2) export HostGroupName=" value
                      sed -i s/HostGroupName=.*$/HostGroupName=\"$value\"/g ./env.sh;. ./env.sh
-                     if [[ ! -f ./project/config.yml.old ]]; then
-                        mv project/config.yml project/config.yml.ref
-                        mv delete.yaml delete.yaml.ref
-                     fi
                      sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
                      sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
                      export info="HostGroupName is used by ManagementZone, AlertingProfile, MaintenanceWindow & the file project/config.yml has a unique id: "$HostGroupName
