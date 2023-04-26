@@ -35,7 +35,7 @@ We will use the lab VM as a tooling host and not as an application host.
     cd;cd dynatrace-lab/
     curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
     chmod +x monaco
-    echo 'monaco v2 is installed on your host"
+    echo "monaco v2 is installed on your host"
     
 ## Step 3 : set the variables 
 use this script to configure the variables on linux environment  
