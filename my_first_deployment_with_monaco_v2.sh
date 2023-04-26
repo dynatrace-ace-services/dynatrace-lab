@@ -102,8 +102,8 @@ do
                         echo " - host-naming: $DT_TENANT_URL/#settings/hostnamingsetting"
                         echo " - processgroup-naming: $DT_TENANT_URL/#settings/pgnamingsettings"
                         echo " - sevice-naming: $DT_TENANT_URL/#settings/servicenamingsettings"
-                        echo " - dashboard: $DT_TENANT_URL/ui/dashboards"
+                        echo " - dashboard: $DT_TENANT_URL/ui/dashboards?showAll=true&filters=owner%3D"$Email
                 ;;
         esac
 done
-echo "Let's start deployment for "$HostGroupName
+
