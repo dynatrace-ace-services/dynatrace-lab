@@ -71,16 +71,28 @@ do
                    fi
                 ;;
                 "Q") APPLY="Q"
-
-                      echo "Go to dynatrace UI configuration : "
-                      echo "- project/config.yml, is configured with the unique id: "$HostGroupName
-                      echo
+                        echo
+                        echo "if you want to run monaco manually:"
+                        echo " - export the variables on local session:      . env.sh"
+                        echo " - deploy json configurations with monaco:     ./monaco deploy manifest.yaml"
+                        echo " - backup json configurations with monaco:     ./monaco download manifest.yaml -e MyEnv"
+                        echo " - (optional) delete config with monaco:       ./monaco delete"
+                        echo
+                        echo
+                        echo "validate the result on dynatrace UI : "
+                        echo " - application-web : $DT_TENANT_URL/#uemapplications"
+                        echo " - app-detection-rule: $DT_TENANT_URL/ui/settings/builtin:rum.web.app-detection"
+                        echo " - management-zone: $DT_TENANT_URL/ui/settings/builtin:management-zones"
+                        echo " - autotag: $DT_TENANT_URL/ui/settings/builtin:tags.auto-tagging"
+                        echo " - alerting-profile: $DT_TENANT_URL/ui/settings/builtin:alerting.profile"
+                        echo " - notification: $DT_TENANT_URL/ui/settings/builtin:problem.notifications"
+                        echo " - maintenance-window: $DT_TENANT_URL/ui/settings/builtin:alerting.maintenance-window"
+                        echo " - host-naming: $DT_TENANT_URL/#settings/hostnamingsetting"
+                        echo " - processgroup-naming: $DT_TENANT_URL/#settings/pgnamingsettings"
+                        echo " - sevice-naming: $DT_TENANT_URL/#settings/servicenamingsettings"
+                        echo " - dashboard: $DT_TENANT_URL/ui/dashboards"
                 ;;
         esac
 done
 echo "Let's start deployment for "$HostGroupName
-echo " - export the variables on local session:      . env.sh"
-echo " - deploy json configurations with monaco:     ./monaco deploy manifest.yaml"
-echo " - backup json configurations with monaco:     ./monaco download manifest.yaml -e MyEnv"
-echo " - (optional) delete config with monaco:       ./monaco delete"
 
