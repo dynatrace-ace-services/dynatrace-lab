@@ -48,7 +48,7 @@ use this script to configure the variables on linux environment
     - Set the variables
     - Run monaco backup
     - Run monaco deploy
-    (optionel run monaco delete)
+    (optional run monaco delete)
 
 ## Step 4 (optional) : redeploy specific management-zone configuration from backup json 
 
