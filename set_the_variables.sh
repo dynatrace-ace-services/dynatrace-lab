@@ -1,7 +1,7 @@
 #!/bin/bash
 . ./env.sh
-info_var=''
-info_monaco=''
+info_var='# => info var:'
+info_monaco=' => info monaco:'
 
 while [ "$APPLY" !=  "Y" ]
 do
@@ -27,7 +27,7 @@ do
         case "$reponse" in
                 "0") read  -p "0) export DT_TENANT_URL=https://" value
                      sed -i 's/DT_TENANT_URL=.*$/DT_TENANT_URL=\"https\:\/\/'$value'\"/g' ./env.sh;. ./env.sh
-                     export info_var="=> Var DT_TENANT_URL has been set for the manifest.yaml"
+                     export info_var=" => Var DT_TENANT_URL has been set for the manifest.yaml"
                 ;;
                 "1") read  -p "1) export DT_API_TOKEN=" value
                      sed -i s/DT_API_TOKEN=.*$/DT_API_TOKEN=\"$value\"/g ./env.sh;. ./env.sh
@@ -45,33 +45,33 @@ do
                 ;;
                 "3") read  -p "3) export DomainName=" value
                      sed -i s/DomainName=.*$/DomainName=\"$value\"/g ./env.sh;. ./env.sh
-                     info_var= "=> Var DomainName has been set for application ans dashbaord markrdown"
+                     export info_var="=> Var DomainName has been set for application ans dashbaord markrdown"
                 ;;
                 "4") read  -p "4) export Email=" value
                      sed -i s/Email=.*$/Email=\"$value\"/g ./env.sh;. ./env.sh
-                     export info_var= "=> Var Email has been set for dashboard owner and email notification"
+                     export info_var="=> Var Email has been set for dashboard owner and email notification"
                 ;;
                 #############################################################
                 "A") read  -p "A) Backup json config> ./monaco download manifest -e MyEnv  [Y/N]" value
                    if [[ ${value^} = Y ]]; then
                      ./monaco download manifest.yaml -e MyEnv
-                     info_monaco = "Json config has been downloaded on the local host with monaco v2"
-                     export read  -p "Press any key to continue " pressanycase
+                     export info_monaco="Json config has been downloaded on the local host with monaco v2"
                    fi
+                     read  -p "Press any key to continue " pressanycase
                 ;;
                 "B") read  -p "B) Deploy json config> ./monaco deploy manifest  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
                      ./monaco deploy manifest.yaml
-                      info_monaco = $HostGroupName" config has been deployed on your tenant "$DT_TENANT_URL
-                      export read  -p "Press any key to continue " pressanycase
+                      export info_monaco=$HostGroupName" config has been deployed on your tenant "$DT_TENANT_URL
                    fi
+                      read  -p "Press any key to continue " pressanycase
                 ;;
                 "C") read  -p "C) Delete json config> ./monaco delete  [Y/N]" value
                    if [[ "$value" = "Y" ]] || [[ "$value" = "y" ]]; then
                      ./monaco delete
-                     info_monaco = $HostGroupName" config has been deleted on your tenant "$DT_TENANT_URL
-                     export read  -p "Press any key to continue " pressanycase
+                     export info_monaco=$HostGroupName" config has been deleted on your tenant "$DT_TENANT_URL
                    fi
+                      read  -p "Press any key to continue " pressanycase
                 ;;
                 "Q") APPLY="Q"
                         echo
