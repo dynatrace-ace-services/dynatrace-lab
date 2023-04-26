@@ -14,12 +14,14 @@ do
         clear
         echo "my_first_deployment_with_monaco_v2.sh"
         echo ""
+        echo "Set variables"
         echo "0) export DT_TENANT_URL="$DT_TENANT_URL
         echo "1) export DT_API_TOKEN="${DT_API_TOKEN:0:32}"*****"
         echo "2) export HostGroupName="$HostGroupName
         echo "3) export DomainName="$DomainName
         echo "4) export Email="$Email
         echo " #####################"
+        echo "Run monaco"
         echo "A) Backup json config> ./monaco download manifest -e MyEnv"
         echo "B) Deploy json config> ./monaco deploy manifest"
         echo "C) Delete json config> ./monaco delete"
