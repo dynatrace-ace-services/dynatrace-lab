@@ -13,13 +13,15 @@ do
         echo "2) export HostGroupName="$HostGroupName
         echo "3) export DomainName="$DomainName
         echo "4) export Email="$Email
-        echo $info_var
+        echo 
         ####################################################
         echo "A) Backup json config> ./monaco download manifest -e MyEnv"
         echo "B) Deploy json config> ./monaco deploy manifest"
         echo "C) Delete json config> ./monaco delete"
-        echo $info_monaco
+        echo 
         echo "Q) Quit or run monaco manually"
+        echo
+        echo "## info => "$info 
         echo ""
         sleep 0.2
         read  -p "Input Selection (0, 1, 2, 3, 4 or A, B, C, Q ): " reponse
@@ -27,11 +29,11 @@ do
         case "$reponse" in
                 "0") read  -p "0) export DT_TENANT_URL=https://" value
                      sed -i 's/DT_TENANT_URL=.*$/DT_TENANT_URL=\"https\:\/\/'$value'\"/g' ./env.sh;. ./env.sh
-                     export info_var=" => Var DT_TENANT_URL has been set for the manifest.yaml"
+                     export info="var DT_TENANT_URL has been set for the manifest.yaml"
                 ;;
                 "1") read  -p "1) export DT_API_TOKEN=" value
                      sed -i s/DT_API_TOKEN=.*$/DT_API_TOKEN=\"$value\"/g ./env.sh;. ./env.sh
-                     export info_var="=> Var DT_API_TOKEN has been set for the manifest.yaml"
+                     export info="var DT_API_TOKEN has been set for the manifest.yaml"
                 ;;
                 "2") read  -p "2) export HostGroupName=" value
                      sed -i s/HostGroupName=.*$/HostGroupName=\"$value\"/g ./env.sh;. ./env.sh
@@ -41,15 +43,15 @@ do
                      fi
                      sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
                      sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
-                     export info_var= "=> Var HostGroupName has been set for ManagementZone, AlertingProfile, MaintenanceWindow \n => File : project/config.yml has a unique id: "$HostGroupName" \n File : delete has been modify for id : "$HostGroupName
+                     export info="var HostGroupName has been set for ManagementZone, AlertingProfile, MaintenanceWindow \n => File : project/config.yml has a unique id: "$HostGroupName" \n File : delete has been modify for id : "$HostGroupName
                 ;;
                 "3") read  -p "3) export DomainName=" value
                      sed -i s/DomainName=.*$/DomainName=\"$value\"/g ./env.sh;. ./env.sh
-                     export info_var="=> Var DomainName has been set for application ans dashbaord markrdown"
+                     export info_var="var DomainName has been set for application ans dashbaord markrdown"
                 ;;
                 "4") read  -p "4) export Email=" value
                      sed -i s/Email=.*$/Email=\"$value\"/g ./env.sh;. ./env.sh
-                     export info_var="=> Var Email has been set for dashboard owner and email notification"
+                     export info_var="var Email has been set for dashboard owner and email notification"
                 ;;
                 #############################################################
                 "A") read  -p "A) Backup json config> ./monaco download manifest -e MyEnv  [Y/N]" value
@@ -73,7 +75,7 @@ do
                    fi
                       read  -p "Press any key to continue " pressanycase
                 ;;
-                "Q") APPLY="Q"
+                "Q") APPLY="Y"
                         echo
                         echo "if you want to run monaco manually:"
                         echo " - export the variables on local session:      . env.sh"
@@ -98,4 +100,3 @@ do
         esac
 done
 echo "Let's start deployment for "$HostGroupName
-
