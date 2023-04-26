@@ -8,7 +8,7 @@ do
         echo "Variables : "
         echo ""
         echo "0) export DT_TENANT_URL="$DT_TENANT_URL
-        echo "1) export DT_API_TOKEN="$DT_API_TOKEN
+        echo "1) export DT_API_TOKEN="${DT_API_TOKEN:0:32}"*****"
         echo "2) export HostGroupName="$HostGroupName
         echo "3) export DomainName="$DomainName
         echo "4) export Email="$Email
@@ -20,7 +20,6 @@ do
         echo 
         echo "Q) Quit or run monaco manually"
         echo "## info => "$info 
-        echo ""
         sleep 0.2
         read  -p "Input Selection (0, 1, 2, 3, 4 or A, B, C, Q ): " reponse
 
@@ -41,7 +40,7 @@ do
                      fi
                      sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
                      sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
-                     export info="var HostGroupName has been set for ManagementZone, AlertingProfile, MaintenanceWindow \n => File : project/config.yml has a unique id: "$HostGroupName" \n File : delete has been modify for id : "$HostGroupName
+                     export info="var HostGroupName has been set for ManagementZone, AlertingProfile, MaintenanceWindow => File : project/config.yml has a unique id: "$HostGroupName
                 ;;
                 "3") read  -p "3) export DomainName=" value
                      sed -i s/DomainName=.*$/DomainName=\"$value\"/g ./env.sh;. ./env.sh
