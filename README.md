@@ -1,6 +1,6 @@
 #  Dynatrace Lab - Monitoring as Code with Monaco v2
-
-![image](https://user-images.githubusercontent.com/40337213/145724361-890e0ba2-80ce-4b80-bd2b-ce8fd313180e.png)
+##Automated app onboardings
+![image](https://user-images.githubusercontent.com/40337213/234709083-8521cd8d-001d-4cdb-ad79-bda704477057.png)
 
 In this lab you will import all json configurations with [monaco v2](https://www.dynatrace.com/support/help/manage/configuration-as-code) : 
 We will use the lab VM as a tooling host and not as an application host.      
@@ -43,3 +43,38 @@ use this script to configure the variables on linux environment
     cd;cd dynatrace-lab
     sh my_first_deployment_with_monaco_v2.sh
 
+![image](https://user-images.githubusercontent.com/40337213/234707950-fbc14355-e79a-4faa-b528-0d65a2a7b30f.png)
+
+    - Set the variables
+    - Run monaco backup
+    - Run monaco deploy
+    (optionel run monaco delete)
+
+## Step 4 (optional) : redeploy specific management-zone configuration from backup json 
+
+download mz configuration 
+
+    cd;cd dynatrace-lab
+    . env.sh
+    ./monaco download manifest.yaml -e MyEnv -a management-zone -o backup-mz
+    
+modifiy config.yaml for mz
+
+    cd backup-mz/project_MyEnv/management-zone
+    nano config.yaml
+
+keep only your id in this file (delete the ohers) and change the name like here : 
+    
+    delete the id section dfferent to your managament-zone
+    rename your management-zone
+    
+![image](https://user-images.githubusercontent.com/40337213/231716709-8bf56d5c-df96-4b50-95b2-9ed2a8a8f577.png)
+
+ redeploy 
+    
+    cd;cd dynatrace-lab/backup-mz
+    ../monaco deploy manifest.yaml
+    
+On Dynatrace UI, verify that you have a new management zone : `My_easytravelXX`, similair to the previous one `lab_easytravelxx`
+
+    echo "Go to the mz settings on the UI : "$DT_TENANT_URL"/ui/settings/builtin:management-zones"
