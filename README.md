@@ -41,7 +41,7 @@ We will use the lab VM as a tooling host and not as an application host.
 use this script to configure the variables on linux environment   
 
     cd;cd dynatrace-lab
-    sh my_first_deployment_with_monaco_v2.sh
+    bash my_first_deployment_with_monaco_v2.sh
 
 ![image](https://user-images.githubusercontent.com/40337213/234709653-0d377eea-7bf7-4bac-b49c-bf5b19414a89.png)
 
