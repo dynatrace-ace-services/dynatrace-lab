@@ -2,7 +2,7 @@
 export DT_TENANT_URL="https://abcd.live.dynatrace.com"
 export DT_API_TOKEN="XXX"
 #export variables application
-export HostGroupName="easytravelxx"
+export HostGroupName="lab_easytravelxx"
 export DomainName="yyy.zzz.dynatrace.com"
 export Email="myemail@email.com"
 #synthetic location (for live.dynatrace.com)
