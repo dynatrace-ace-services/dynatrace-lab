@@ -2,10 +2,11 @@
 . ./env.sh
 info=''
 
-if [[ ! -f ./project/config.yml.ref ]]; then
+if [[ ! -f project/config.yml.ref ]]; then
   mv project/config.yml project/config.yml.ref
   mv delete.yaml delete.yaml.ref
 fi
+    
 sed "s/config-id/$HostGroupName/g" project/config.yml.ref > project/config.yml
 sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
 
