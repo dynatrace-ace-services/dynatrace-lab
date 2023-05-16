@@ -13,7 +13,7 @@ sed "s/config-id/$HostGroupName/g" delete.yaml.ref > delete.yaml
 while [ "$APPLY" !=  "Y" ]
 do
         clear
-        echo "my_first_deployment_with_monaco_v2.sh"
+        echo "bash my_first_deployment_with_monaco_v2.sh"
         echo ""
         echo "Set variables"
         echo "0) export DT_TENANT_URL="$DT_TENANT_URL
