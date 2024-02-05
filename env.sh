@@ -3,7 +3,7 @@ export DT_TENANT_URL="https://abcd.live.dynatrace.com"
 export DT_API_TOKEN="XXX"
 #export variables application
 export HostGroupName="lab_easytravelxx"
-export DomainName="yyy.zzz.dynatrace.com"
+export DomainName="yyy.zzz.cloudapp.azure.com"
 export Email="myemail@email.com"
 #synthetic location (for live.dynatrace.com)
 export PublicSyntheticLocation1="GEOLOCATION-E266126A762728A2" #Paris_AWS
