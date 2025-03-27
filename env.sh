@@ -1,5 +1,6 @@
 #export variables environment
-export DT_TENANT_URL="https://abcd.live.dynatrace.com"
+#export DT_TENANT_URL="https://abcd.live.dynatrace.com"
+export DT_TENANT_URL="https://dynatracemanagedlab00.westeurope.cloudapp.azure.com/e/09b1b855-ce2c-4361-9f2f-248b16a007d8"
 export DT_API_TOKEN="XXX"
 #export variables application
 export HostGroupName="lab_easytravelxx"
